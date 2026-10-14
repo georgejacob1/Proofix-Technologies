@@ -1,0 +1,186 @@
+/* ==========================================================================
+   PROOFIX TECHNOLOGIES - FAQ PAGE CSS (faq.css)
+   ========================================================================== */
+
+/* Page Hero */
+.faq-hero {
+  background-color: var(--primary-dark);
+  color: var(--text-white);
+  padding: 85px 0 95px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(226, 149, 71, 0.12) 0%, transparent 70%);
+}
+
+.faq-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.faq-hero-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.faq-hero-title span {
+  color: var(--accent-gold);
+}
+
+.faq-hero-desc {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   Accordion Section
+   ========================================================================== */
+.faq-section {
+  padding: 85px 0;
+  background-color: var(--bg-body);
+}
+
+.faq-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-category-header {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  margin: 40px 0 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq-category-header:first-of-type {
+  margin-top: 0;
+}
+
+.faq-category-header i {
+  color: var(--accent-gold);
+  font-size: 1.25rem;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+}
+
+.faq-item.active {
+  border-color: var(--accent-blue);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+  padding: 22px 26px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--bg-card);
+  transition: var(--transition-fast);
+  user-select: none;
+}
+
+.faq-question:hover {
+  color: var(--accent-blue);
+  background-color: var(--bg-alt);
+}
+
+.faq-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+
+.faq-item.active .faq-icon {
+  background: var(--accent-blue-light);
+  color: var(--accent-blue);
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 26px 24px 26px;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.75;
+  border-top: 1px solid transparent;
+}
+
+.faq-item.active .faq-answer {
+  border-top-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Quick Inquiry Card */
+.faq-help-box {
+  background: linear-gradient(145deg, #0b1a2f, #153258);
+  border-radius: var(--radius-xl);
+  padding: 44px;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.faq-help-box h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.faq-help-box p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 24px auto;
+}
+
+@media (max-width: 768px) {
+  .faq-question {
+    padding: 18px 20px;
+    font-size: 1rem;
+  }
+  .faq-answer {
+    padding: 0 20px 20px 20px;
+  }
+}

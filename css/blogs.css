@@ -1,0 +1,316 @@
+/* ==========================================================================
+   PROOFIX TECHNOLOGIES - BLOGS PAGE CSS (blogs.css)
+   ========================================================================== */
+
+/* Page Hero */
+.blogs-hero {
+  background-color: var(--primary-dark);
+  color: var(--text-white);
+  padding: 85px 0 95px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.blogs-hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+}
+
+.blogs-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.blogs-hero-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.blogs-hero-title span {
+  color: var(--accent-gold);
+}
+
+.blogs-hero-desc {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+/* Search & Filter Bar */
+.blog-filter-bar {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.blog-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blog-search-box {
+  position: relative;
+  flex: 1;
+  max-width: 420px;
+}
+
+.blog-search-input {
+  width: 100%;
+  padding: 11px 18px 11px 42px;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: 0.92rem;
+  background-color: var(--bg-alt);
+}
+
+.blog-search-input:focus {
+  border-color: var(--accent-blue);
+  background-color: var(--bg-card);
+}
+
+.blog-search-box i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.blog-category-pills {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.blog-pill {
+  padding: 7px 16px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  background: var(--bg-alt);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.blog-pill:hover,
+.blog-pill.active {
+  background: var(--accent-gold);
+  color: #0b1a2f;
+  border-color: var(--accent-gold);
+}
+
+/* ==========================================================================
+   Articles Grid
+   ========================================================================== */
+.blogs-section {
+  padding: 80px 0;
+  background-color: var(--bg-body);
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+.blog-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-normal);
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--accent-blue);
+}
+
+.blog-card-body {
+  padding: 34px 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-meta-tags {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.blog-badge {
+  background: var(--accent-blue-light);
+  color: var(--accent-blue);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.blog-badge.gold {
+  background: var(--accent-gold-light);
+  color: var(--accent-gold);
+}
+
+.blog-title {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  color: var(--primary-dark);
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.blog-excerpt {
+  font-size: 0.96rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.blog-key-points {
+  background: var(--bg-alt);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-color);
+}
+
+.blog-key-points h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.blog-key-points ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.blog-key-points li {
+  font-size: 0.88rem;
+  color: var(--text-main);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.blog-key-points li i {
+  color: var(--accent-emerald);
+  font-size: 0.85rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.blog-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+}
+
+.blog-author-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.blog-author-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent-blue-light);
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+/* Modal Popup for Article Reading */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(9, 25, 46, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  padding: 40px 20px;
+  overflow-y: auto;
+}
+
+.modal-content-box {
+  background: var(--bg-card);
+  max-width: 780px;
+  margin: 30px auto;
+  border-radius: var(--radius-xl);
+  padding: 44px 40px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  font-size: 1.1rem;
+}
+
+.modal-close-btn:hover {
+  background: var(--accent-gold);
+  color: #0b1a2f;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .blogs-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,219 @@
+/* ==========================================================================
+   PROOFIX TECHNOLOGIES - RESEARCH DOMAINS PAGE CSS (research-domains.css)
+   ========================================================================== */
+
+/* Page Hero */
+.domains-hero {
+  background-color: var(--primary-dark);
+  color: var(--text-white);
+  padding: 85px 0 95px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.domains-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.domains-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.domains-hero-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.domains-hero-title span {
+  color: var(--accent-gold);
+}
+
+.domains-hero-desc {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+/* Domain Navigation Sticky Bar */
+.domain-quick-nav {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 0;
+  position: sticky;
+  top: var(--header-height);
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.quick-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 4px;
+}
+
+.quick-nav-btn {
+  padding: 8px 16px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  background: var(--bg-alt);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
+  transition: var(--transition-fast);
+}
+
+.quick-nav-btn:hover,
+.quick-nav-btn.active {
+  background: var(--primary-dark);
+  color: var(--text-white);
+  border-color: var(--primary-dark);
+}
+
+/* ==========================================================================
+   Domain Blocks Layout
+   ========================================================================== */
+.domains-section {
+  padding: 80px 0;
+  background-color: var(--bg-body);
+}
+
+.domain-detail-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.domain-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 44px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  scroll-margin-top: 150px;
+}
+
+.domain-block:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: var(--accent-blue);
+}
+
+.domain-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.domain-icon-box {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: var(--accent-blue-light);
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.domain-block:nth-child(2) .domain-icon-box { background: var(--accent-gold-light); color: var(--accent-gold); }
+.domain-block:nth-child(3) .domain-icon-box { background: rgba(147, 51, 234, 0.1); color: #9333EA; }
+.domain-block:nth-child(4) .domain-icon-box { background: var(--accent-emerald-light); color: var(--accent-emerald); }
+.domain-block:nth-child(5) .domain-icon-box { background: rgba(236, 72, 153, 0.1); color: #EC4899; }
+.domain-block:nth-child(6) .domain-icon-box { background: rgba(14, 165, 233, 0.1); color: #0EA5E9; }
+
+.domain-title {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  color: var(--primary-dark);
+}
+
+.domain-desc {
+  font-size: 1.02rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+
+.domain-tags-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--primary-dark);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.domain-tags-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.domain-subtag {
+  background: var(--bg-alt);
+  color: var(--text-main);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.domain-subtag i {
+  color: var(--accent-blue);
+  font-size: 0.75rem;
+}
+
+.domain-subtag:hover {
+  background: var(--accent-blue-light);
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+  transform: translateY(-2px);
+}
+
+.domain-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+  border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .domain-block {
+    padding: 28px 20px;
+  }
+  .domain-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
