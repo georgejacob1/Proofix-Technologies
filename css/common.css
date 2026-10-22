@@ -7,36 +7,53 @@
 
 :root {
   /* Brand Palette */
-  --primary-dark: #09192E;        /* Deep academic navy for heroes, headers, footers */
-  --primary-dark-light: #0F2542;  /* Elevated dark elements */
-  --primary-dark-lighter: #1B3B66;/* Dark card borders, highlight states */
-  --accent-gold: #E29547;         /* Warm amber CTA, gold accents */
-  --accent-gold-hover: #CF8235;   /* Button hover state */
-  --accent-gold-light: rgba(226, 149, 71, 0.12);
-  --accent-blue: #2563EB;         /* Vibrant blue for links, tags */
+  --primary-dark: #09192E;
+  /* Deep academic navy for heroes, headers, footers */
+  --primary-dark-light: #0F2542;
+  /* Elevated dark elements */
+  --primary-dark-lighter: #1B3B66;
+  /* Dark card borders, highlight states */
+  --accent-gold: #36A29B;
+  /* Teal CTA accent */
+  --accent-gold-hover: #2A8A83;
+  /* Button hover state */
+  --accent-gold-light: rgba(54, 162, 155, 0.12);
+  --accent-blue: #2563EB;
+  /* Vibrant blue for links, tags */
   --accent-blue-hover: #1D4ED8;
   --accent-blue-light: rgba(37, 99, 235, 0.08);
-  --accent-emerald: #10B981;      /* Verification, success ticks */
+  --accent-emerald: #10B981;
+  /* Verification, success ticks */
   --accent-emerald-light: rgba(16, 185, 129, 0.1);
 
   /* Neutrals & Surfaces */
-  --bg-body: #F8FAFC;             /* Light body background */
-  --bg-card: #FFFFFF;             /* Crisp white card surface */
-  --bg-alt: #F1F5F9;              /* Section zebra contrast */
-  --border-color: #E2E8F0;        /* Subtle card border */
-  --border-focus: #3B82F6;        /* Active form focus */
+  --bg-body: #F8FAFC;
+  /* Light body background */
+  --bg-card: #FFFFFF;
+  /* Crisp white card surface */
+  --bg-alt: #F1F5F9;
+  /* Section zebra contrast */
+  --border-color: #E2E8F0;
+  /* Subtle card border */
+  --border-focus: #3B82F6;
+  /* Active form focus */
 
   /* Text Colors */
-  --text-main: #0F172A;           /* Deep readable body text */
-  --text-muted: #52637A;          /* Subtitles, meta info */
-  --text-light: #94A3B8;          /* Light placeholder/caption */
-  --text-white: #FFFFFF;          /* Pure white on dark backgrounds */
-  --text-gold: #F59E0B;           /* Vibrant gold text */
+  --text-main: #0F172A;
+  /* Deep readable body text */
+  --text-muted: #52637A;
+  /* Subtitles, meta info */
+  --text-light: #94A3B8;
+  /* Light placeholder/caption */
+  --text-white: #FFFFFF;
+  /* Pure white on dark backgrounds */
+  --text-gold: #36A29B;
+  /* Teal accent text */
 
   /* Typography Scales */
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  
+
   /* Layout Dimensions */
   --container-width: 1220px;
   --container-padding: 24px;
@@ -63,7 +80,9 @@
 /* ==========================================================================
    Global Reset & Base Setup
    ========================================================================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -85,7 +104,8 @@ body {
   overflow-x: hidden;
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -96,11 +116,15 @@ a {
   transition: var(--transition-fast);
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
   border: none;
@@ -141,7 +165,7 @@ button {
   padding: 6px 14px;
   border-radius: var(--radius-full);
   margin-bottom: 16px;
-  border: 1px solid rgba(226, 149, 71, 0.25);
+  border: 1px solid rgba(54, 162, 155, 0.25);
 }
 
 .section-tag.blue {
@@ -190,14 +214,14 @@ button {
 
 .btn-primary {
   background-color: var(--accent-gold);
-  color: #101828;
-  box-shadow: 0 4px 14px rgba(226, 149, 71, 0.35);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(54, 162, 155, 0.35);
 }
 
 .btn-primary:hover {
   background-color: var(--accent-gold-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(226, 149, 71, 0.45);
+  box-shadow: 0 6px 20px rgba(54, 162, 155, 0.45);
 }
 
 .btn-secondary {
@@ -276,14 +300,14 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--accent-gold), #c9792e);
+  background: linear-gradient(135deg, var(--accent-gold), #237a74);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0b1a2f;
+  color: #ffffff;
   font-weight: 800;
   font-size: 1.25rem;
-  box-shadow: 0 4px 12px rgba(226, 149, 71, 0.35);
+  box-shadow: 0 4px 12px rgba(54, 162, 155, 0.35);
 }
 
 .brand-text {
@@ -315,12 +339,13 @@ button {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 18px;
+  flex-wrap: nowrap;
 }
 
 .nav-link {
   color: rgba(255, 255, 255, 0.82);
-  font-size: 0.92rem;
+  font-size: 0.84rem;
   font-weight: 500;
   padding: 8px 2px;
   position: relative;
@@ -328,6 +353,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  white-space: nowrap;
 }
 
 .nav-link:hover,
@@ -695,5 +721,114 @@ button {
     flex-direction: column;
     text-align: center;
     gap: 10px;
+  }
+}
+
+/* ==========================================================================
+   HERO BANNER SLIDER (Owl Carousel Background Slider - Shared Across Pages)
+   ========================================================================== */
+.hero-slider-section {
+  position: relative;
+  color: var(--text-white);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* --- Hero Owl Carousel Background --- */
+.hero-banner-carousel {
+  position: absolute !important;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-banner-carousel .owl-stage-outer,
+.hero-banner-carousel .owl-stage,
+.hero-banner-carousel .owl-item {
+  height: 100%;
+}
+
+.hero-banner-carousel .hero-slide {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* --- Dark Overlay for Text Legibility --- */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(7, 18, 36, 0.88) 0%,
+    rgba(9, 25, 46, 0.74) 50%,
+    rgba(7, 18, 36, 0.90) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* --- Hero Content on top of slider --- */
+.hero-slider-container {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.hero-slider-container a,
+.hero-slider-container button,
+.hero-slider-container input,
+.hero-slider-container select,
+.hero-slider-container .filter-pill,
+.hero-slider-container .btn,
+.hero-slider-container .philosophy-card,
+.hero-slider-container .hero-badge,
+.hero-slider-container .hero-point,
+.hero-slider-container .hero-pill-badge {
+  pointer-events: auto;
+}
+
+/* Subpage Hero Slider Sizing & Padding */
+.about-hero.hero-slider-section,
+.services-hero.hero-slider-section,
+.domains-hero.hero-slider-section,
+.process-hero.hero-slider-section,
+.blogs-hero.hero-slider-section,
+.faq-hero.hero-slider-section,
+.contact-hero.hero-slider-section {
+  min-height: 480px;
+  padding: 90px 0 100px 0;
+}
+
+@media (max-width: 1024px) {
+  .about-hero.hero-slider-section,
+  .services-hero.hero-slider-section,
+  .domains-hero.hero-slider-section,
+  .process-hero.hero-slider-section,
+  .blogs-hero.hero-slider-section,
+  .faq-hero.hero-slider-section,
+  .contact-hero.hero-slider-section {
+    min-height: 420px;
+    padding: 70px 0 80px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero.hero-slider-section,
+  .services-hero.hero-slider-section,
+  .domains-hero.hero-slider-section,
+  .process-hero.hero-slider-section,
+  .blogs-hero.hero-slider-section,
+  .faq-hero.hero-slider-section,
+  .contact-hero.hero-slider-section {
+    min-height: 360px;
+    padding: 55px 0 65px 0;
   }
 }

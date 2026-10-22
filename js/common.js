@@ -79,4 +79,30 @@ $(document).ready(function () {
       }, 500);
     }
   });
+
+  // 8. Hero Banner Background Slider for Subpages
+  const $subpageHeroCarousel = $('.hero-banner-carousel:not(#heroBannerCarousel)');
+  if ($subpageHeroCarousel.length && typeof $.fn.owlCarousel === 'function') {
+    $subpageHeroCarousel.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 0,
+      autoplay: true,
+      autoplayTimeout: 5500,
+      autoplayHoverPause: true,
+      smartSpeed: 800,
+      nav: false,
+      dots: false,
+      responsive: {
+        0: {
+          nav: false,
+          dots: false
+        },
+        768: {
+          nav: false,
+          dots: false
+        }
+      }
+    });
+  }
 });

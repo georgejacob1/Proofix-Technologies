@@ -9,6 +9,10 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
+  <!-- Owl Carousel Styles -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
   <!-- Common & Page Styles -->
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/contact.css">
@@ -31,7 +35,7 @@
       <!-- Desktop & Mobile Nav Menu -->
       <nav class="nav-menu" id="navMenu">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About Us - Why Proofix</a>
+        <a href="about.html" class="nav-link">About Us</a>
         
         <!-- Services Dropdown -->
         <div class="nav-item-dropdown">
@@ -94,8 +98,6 @@
         </div>
 
         <a href="process.html" class="nav-link">Our Process</a>
-        <a href="blogs.html" class="nav-link">Blogs</a>
-        <a href="faq.html" class="nav-link">FAQ</a>
         <a href="contact.html" class="nav-link active">Contact Us</a>
       </nav>
 
@@ -112,11 +114,23 @@
   </header>
 
   <!-- ==========================================================================
-       PAGE HERO
+       PAGE HERO (With Owl Carousel Background Slider)
        ========================================================================== -->
   <main>
-    <section class="contact-hero">
-      <div class="container">
+    <section class="contact-hero hero-slider-section">
+
+      <!-- Owl Carousel Background Slides -->
+      <div class="hero-banner-carousel owl-carousel owl-theme">
+        <div class="hero-slide" style="background-image: url('assets/images/banner.png');"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/banner2.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/banner3.jpg');"></div>
+      </div>
+
+      <!-- Dark overlay for readability -->
+      <div class="hero-overlay"></div>
+
+      <!-- Hero Content -->
+      <div class="container hero-slider-container">
         <div class="contact-hero-content">
           <span class="section-tag" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.18); color: var(--accent-gold);">
             <i class="fa-solid fa-handshake"></i> Direct Domain Collaboration
@@ -458,6 +472,7 @@
 
   <!-- Scripts -->
   <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/contact.js"></script>
 </body>
