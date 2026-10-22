@@ -4,689 +4,152 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proofix Technologies | Empowering Research. Enabling Excellence.</title>
-  <meta name="description" content="Proofix Technologies provides professional academic research assistance, technical guidance, and research support for PhD scholars, researchers, and faculty members.">
-  
-  <!-- Font Awesome Icons -->
+  <meta name="description" content="Professional academic research assistance, technical guidance and research support for scholars, researchers and faculty members.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Common & Page-Specific Styles -->
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/blogs.css">
+  <link rel="stylesheet" href="css/faq.css">
 </head>
 <body>
-
-  <!-- ==========================================================================
-       COMMON HEADER
-       ========================================================================== -->
-  <header class="site-header" id="siteHeader">
-    <div class="container header-container">
-      <a href="index.html" class="brand-logo" aria-label="Proofix Technologies Home">
-        <div class="brand-icon">P</div>
-        <div class="brand-text">
-          <span class="brand-name">Proofix<span>.</span></span>
-          <span class="brand-subtext">Technologies</span>
-        </div>
-      </a>
-
-      <!-- Desktop & Mobile Nav Menu -->
-      <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About Us - Why Proofix</a>
-        
-        <!-- Services Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="services.html" class="nav-link">
-            Services <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem;"></i>
-          </a>
-          <div class="nav-dropdown">
-            <a href="services.html#service-proposal" class="dropdown-link">
-              <i class="fa-solid fa-file-signature"></i> Research Proposal & Synopsis
-            </a>
-            <a href="services.html#service-literature" class="dropdown-link">
-              <i class="fa-solid fa-book-open-reader"></i> Literature Review Support
-            </a>
-            <a href="services.html#service-methodology" class="dropdown-link">
-              <i class="fa-solid fa-compass-drafting"></i> Research Methodology
-            </a>
-            <a href="services.html#service-analysis" class="dropdown-link">
-              <i class="fa-solid fa-chart-pie"></i> Data Analysis & Statistics
-            </a>
-            <a href="services.html#service-thesis" class="dropdown-link">
-              <i class="fa-solid fa-graduation-cap"></i> Thesis & Dissertation
-            </a>
-            <a href="services.html#service-manuscript" class="dropdown-link">
-              <i class="fa-solid fa-newspaper"></i> Paper & Manuscript Support
-            </a>
-            <a href="services.html#service-publication" class="dropdown-link">
-              <i class="fa-solid fa-upload"></i> Publication Support
-            </a>
-            <a href="services.html#service-editing" class="dropdown-link">
-              <i class="fa-solid fa-spell-check"></i> Academic Editing & Proofreading
-            </a>
-          </div>
-        </div>
-
-        <!-- Research Domains Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="research-domains.html" class="nav-link">
-            Research Domains <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem;"></i>
-          </a>
-          <div class="nav-dropdown">
-            <a href="research-domains.html#domain-engineering" class="dropdown-link">
-              <i class="fa-solid fa-microchip"></i> Engineering & Technology
-            </a>
-            <a href="research-domains.html#domain-cs-it" class="dropdown-link">
-              <i class="fa-solid fa-network-wired"></i> Computer Science & IT
-            </a>
-            <a href="research-domains.html#domain-ai-ml" class="dropdown-link">
-              <i class="fa-solid fa-brain"></i> Artificial Intelligence & ML
-            </a>
-            <a href="research-domains.html#domain-datascience" class="dropdown-link">
-              <i class="fa-solid fa-chart-line"></i> Data Science & Analytics
-            </a>
-            <a href="research-domains.html#domain-management" class="dropdown-link">
-              <i class="fa-solid fa-briefcase"></i> Management & Business
-            </a>
-            <a href="research-domains.html#domain-healthcare" class="dropdown-link">
-              <i class="fa-solid fa-heart-pulse"></i> Healthcare & Medical
-            </a>
-          </div>
-        </div>
-
-        <a href="process.html" class="nav-link">Our Process</a>
-        <a href="blogs.html" class="nav-link">Blogs</a>
-        <a href="faq.html" class="nav-link">FAQ</a>
-        <a href="contact.html" class="nav-link">Contact Us</a>
-      </nav>
-
-      <!-- Right Header Actions -->
-      <div class="header-actions">
-        <a href="contact.html" class="btn btn-primary header-btn">
-          <span>Book Consultation</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Proofix Technologies home"><img src="assets/images/logo.png" alt="Proofix Technologies" width="105" height="46"></a>
+    <nav class="nav" id="nav" aria-label="Main">
+        <button class="nav-close" id="navClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <div class="has-menu"><button class="nav-link" aria-haspopup="true">Services <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="menu"><a href="services.html">All Services</a><a href="service-detail.html?s=proposal">Research Proposal & Synopsis Support</a><a href="service-detail.html?s=literature">Literature Review Support</a><a href="service-detail.html?s=methodology">Research Methodology Support</a><a href="service-detail.html?s=analysis">Data Analysis & Statistical Support</a><a href="service-detail.html?s=thesis">Thesis & Dissertation Support</a><a href="service-detail.html?s=manuscript">Research Paper & Manuscript Support</a><a href="service-detail.html?s=publication">Publication Support</a><a href="service-detail.html?s=editing">Academic Editing & Proofreading</a></div></div>
+        <div class="has-menu"><button class="nav-link" aria-haspopup="true">Research Domains <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="menu"><a href="research-domains.html">All Domains</a><a href="research-domains.html#domain-engineering">Engineering & Technology</a><a href="research-domains.html#domain-cs-it">Computer Science & Information Technology</a><a href="research-domains.html#domain-ai-ml">Artificial Intelligence & Machine Learning</a><a href="research-domains.html#domain-datascience">Data Science & Analytics</a><a href="research-domains.html#domain-management">Management & Business Research</a><a href="research-domains.html#domain-healthcare">Healthcare & Medical Research</a></div></div>
+        <a class="nav-link" href="process.html">Our Process</a>
+        <a class="nav-link" href="blogs.html">Blogs</a>
+        <a class="nav-link" href="faq.html">FAQ</a>
+        <a class="btn btn-accent nav-cta" href="contact.html">Book Consultation</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-accent header-cta" href="contact.html">Book Consultation</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
-  </header>
+  </div>
+</header>
+<main id="main">
 
-  <!-- ==========================================================================
-       HERO SECTION
-       ========================================================================== -->
-  <main>
-    <section class="hero-section">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div class="hero-badge">
-              <i class="fa-solid fa-shield-halved"></i>
-              <span>Trusted by 500+ PhD Scholars & Researchers</span>
-            </div>
-            
-            <h1 class="hero-title">
-              Empowering Research. <span>Enabling Excellence.</span>
-            </h1>
-            
-            <p class="hero-description">
-              Proofix Technologies provides professional academic research assistance, technical guidance, and research support for scholars, researchers, faculty members, and academic professionals worldwide.
-            </p>
+<section class="hero"><div class="container hero-grid">
+  <div class="hero-copy">
+    <span class="hero-pill"><i class="fa-solid fa-star"></i><b>Professional</b> Academic Research Support</span>
+    <h1>Empowering <span class="avatars"><img src="https://picsum.photos/id/1005/96/96" alt=""><img src="https://picsum.photos/id/1011/96/96" alt=""><img src="https://picsum.photos/id/1027/96/96" alt=""></span> Research. <em>Enabling Excellence.</em></h1>
+    <p class="lead">Proofix Technologies Pvt Ltd provides professional academic research assistance, technical guidance, and research support for scholars, researchers, faculty members, and academic professionals.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="contact.html">Start Your Journey <i class="fa-solid fa-arrow-right"></i></a>
+    <a class="btn btn-outline" href="services.html">Explore Services</a></div>
+    <ul class="hero-stats"><li><strong>8</strong><span>Research Services</span></li><li><strong>6</strong><span>Research Domains</span></li><li><strong>360&deg;</strong><span>Stage-wise Support</span></li></ul>
+  </div>
+  <div class="hero-visual"><img src="https://picsum.photos/id/0/900/1100" alt="Researcher working on a laptop">
+    <div class="hv-chips"><span><i class="fa-solid fa-circle-check"></i>Structured &amp; Ethical</span><span><i class="fa-solid fa-circle-check"></i>Every Stage Covered</span></div>
+    <div class="hv-card blue hv-a"><strong>Idea to Impact</strong><span>Support at every research stage</span></div>
+    <div class="hv-card white hv-b"><h3>Add your focus</h3><div class="tags"><span>+ Topic</span><span>+ Writing</span><span>+ Publication</span></div></div>
+    <div class="hv-card blue hv-c"><strong>6 Domains</strong><span>Domain-specific experts</span></div>
+  </div>
+</div></section>
 
-            <div class="hero-actions">
-              <a href="contact.html" class="btn btn-primary">
-                <span>Start Your Journey</span>
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-              <a href="services.html" class="btn btn-secondary">
-                <span>Explore Services</span>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
+<section class="stats-strip"><div class="container"><div class="stats-box">
+  <div class="stat"><i class="fa-solid fa-lightbulb"></i><strong>Idea to Impact</strong><span>Support at every research stage</span></div>
+  <div class="stat"><i class="fa-solid fa-user-graduate"></i><strong>Subject Experts</strong><span>Matched to your domain</span></div>
+  <div class="stat"><i class="fa-solid fa-scale-balanced"></i><strong>Ethical Approach</strong><span>Guidance, structure &amp; clarity</span></div>
+  <div class="stat"><i class="fa-solid fa-comments"></i><strong>Transparent Process</strong><span>6 clear phases</span></div>
+</div></div></section>
 
-            <div class="hero-meta-points">
-              <div class="hero-point">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>Ethical & Structured Support</span>
-              </div>
-              <div class="hero-point">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>Domain-Specific Mentorship</span>
-              </div>
-              <div class="hero-point">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>98% Scholar Satisfaction</span>
-              </div>
-            </div>
-          </div>
+<section class="section"><div class="container">
+  <div class="section-head"><span class="eyebrow">What we do</span><h2>Research Support for Every Stage of Your Academic Journey</h2>
+  <p>Every research project is unique. Proofix provides customized support based on your research stage, subject area, project requirements, and academic objectives.</p></div>
+  <div class="grid grid-4"><a class="card service-card" href="service-detail.html?s=proposal"><div class="icon-box"><i class="fa-solid fa-file-signature"></i></div>
+  <h3>Research Proposal & Synopsis Support</h3><p>Build a logically structured proposal that clearly states your problem, objectives and methodology.</p><span class="link-arrow">View details <i class="fa-solid fa-arrow-right"></i></span></a><a class="card service-card" href="service-detail.html?s=literature"><div class="icon-box"><i class="fa-solid fa-book-open-reader"></i></div>
+  <h3>Literature Review Support</h3><p>Organise and synthesise existing studies to uncover gaps and establish the need for your research.</p><span class="link-arrow">View details <i class="fa-solid fa-arrow-right"></i></span></a><a class="card service-card" href="service-detail.html?s=methodology"><div class="icon-box"><i class="fa-solid fa-diagram-project"></i></div>
+  <h3>Research Methodology Support</h3><p>Choose the right design, sampling, models and validation strategy for reliable conclusions.</p><span class="link-arrow">View details <i class="fa-solid fa-arrow-right"></i></span></a><a class="card service-card" href="service-detail.html?s=analysis"><div class="icon-box"><i class="fa-solid fa-chart-column"></i></div>
+  <h3>Data Analysis & Statistical Support</h3><p>Prepare, analyse and interpret your data with appropriate statistical and analytical methods.</p><span class="link-arrow">View details <i class="fa-solid fa-arrow-right"></i></span></a><a class="card service-card" href="service-detail.html?s=thesis"><div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+  <h3>Thesis & Dissertation Support</h3><p>Improve the organisation, clarity and consistency of your complete research document.</p><span class="link-arrow">View details <i class="fa-solid fa-arrow-right"></i></span></a><a class="card service-card" href="service-detail.html?s=manuscript"><div class="icon-box"><i class="fa-solid fa-newspaper"></i></div>
+  <h3>Research Paper & Manuscript Support</h3><p>Strengthen the structure, clarity and academic presentation of your research manuscript.</p><span class="link-arrow">View details <i class="fa-solid fa-arrow-right"></i></span></a><a class="card service-card" href="service-detail.html?s=publication"><div class="icon-box"><i class="fa-solid fa-paper-plane"></i></div>
+  <h3>Publication Support</h3><p>Prepare for submission, choose suitable journals and respond effectively to reviewer feedback.</p><span class="link-arrow">View details <i class="fa-solid fa-arrow-right"></i></span></a><a class="card service-card" href="service-detail.html?s=editing"><div class="icon-box"><i class="fa-solid fa-spell-check"></i></div>
+  <h3>Academic Editing & Proofreading</h3><p>Polish language, structure and formatting so your research reads clearly and professionally.</p><span class="link-arrow">View details <i class="fa-solid fa-arrow-right"></i></span></a></div>
+</div></section>
 
-          <!-- Hero Visual Feature Box -->
-          <div class="hero-visual-card">
-            <div class="visual-card-header">
-              <span class="visual-badge">
-                <i class="fa-solid fa-circle-notch fa-spin"></i> Research Support Framework
-              </span>
-              <span style="font-size: 0.82rem; color: var(--accent-gold); font-weight: 600;">ISO Standard</span>
-            </div>
+<section class="section soft"><div class="container">
+  <div class="section-head"><span class="eyebrow">Your journey</span><h2>From Research Problem to Publication</h2>
+  <p>Research can be challenging — from identifying a meaningful problem to responding to reviewer feedback. Proofix helps you navigate each stage.</p></div>
+  <div class="journey"><a href="service-detail.html?s=proposal">Proposal & Synopsis</a><a href="service-detail.html?s=literature">Literature Review</a><a href="service-detail.html?s=methodology">Methodology</a><a href="service-detail.html?s=analysis">Data Analysis & Statistical</a><a href="service-detail.html?s=thesis">Thesis & Dissertation</a><a href="service-detail.html?s=manuscript">Paper & Manuscript</a><a href="service-detail.html?s=publication">Publication</a><a href="service-detail.html?s=editing">Academic Editing & Proofreading</a></div>
+</div></section>
 
-            <h3 class="visual-card-title">Strengthening the Research Behind the Document</h3>
-            
-            <div class="visual-steps-list">
-              <div class="visual-step-item">
-                <div class="step-num">1</div>
-                <div class="step-text">Basepaper Finalization & Novel Problem Formulation</div>
-              </div>
-              <div class="visual-step-item">
-                <div class="step-num">2</div>
-                <div class="step-text">Literature Synthesis & Research Gap Mapping</div>
-              </div>
-              <div class="visual-step-item">
-                <div class="step-num">3</div>
-                <div class="step-text">Advanced Statistical Analysis & Model Implementation</div>
-              </div>
-              <div class="visual-step-item">
-                <div class="step-num">4</div>
-                <div class="step-text">Target Journal Formatting & Pre-Submission Quality Review</div>
-              </div>
-            </div>
+<section class="section"><div class="container split">
+  <img src="https://picsum.photos/id/1/900/675" alt="Researchers discussing a project" loading="lazy">
+  <div>
+    <span class="eyebrow">Why Proofix</span>
+    <h2>Our goal is to strengthen the research behind the document</h2>
+    <p>Research can be challenging, from identifying a meaningful research problem to selecting an appropriate methodology, analysing data, implementing technical solutions, preparing manuscripts, and responding to reviewer feedback. Proofix helps researchers navigate these stages with structured, professional, and ethical support.</p>
+    <div class="quote">Raw ideas are common, Refined Research is rare<small>— The Proofix philosophy</small></div>
+    <p style="margin-top:24px"><a class="link-arrow" href="about.html">About Proofix <i class="fa-solid fa-arrow-right"></i></a></p>
+  </div>
+</div></section>
 
-            <div class="visual-card-footer">
-              <i class="fa-solid fa-quote-left"></i>
-              <p><em>“Raw ideas are common, Refined Research is rare. We build confidence throughout your academic journey.”</em></p>
-            </div>
-          </div>
-        </div>
+<section class="section tint"><div class="container">
+  <div class="section-head"><span class="eyebrow">Research domains</span><h2>Supporting Research Across Multiple Disciplines</h2>
+  <p>From technology-driven research and data analysis to management, healthcare, education, and social sciences.</p></div>
+  <div class="grid grid-3"><a class="card domain-tile" href="research-domains.html#domain-engineering"><div class="icon-box"><i class="fa-solid fa-gears"></i></div><div><h3>Engineering & Technology</h3><p>11 focus areas</p></div></a><a class="card domain-tile" href="research-domains.html#domain-cs-it"><div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div><div><h3>Computer Science & Information Technology</h3><p>13 focus areas</p></div></a><a class="card domain-tile" href="research-domains.html#domain-ai-ml"><div class="icon-box"><i class="fa-solid fa-brain"></i></div><div><h3>Artificial Intelligence & Machine Learning</h3><p>12 focus areas</p></div></a><a class="card domain-tile" href="research-domains.html#domain-datascience"><div class="icon-box"><i class="fa-solid fa-chart-line"></i></div><div><h3>Data Science & Analytics</h3><p>10 focus areas</p></div></a><a class="card domain-tile" href="research-domains.html#domain-management"><div class="icon-box"><i class="fa-solid fa-briefcase"></i></div><div><h3>Management & Business Research</h3><p>12 focus areas</p></div></a><a class="card domain-tile" href="research-domains.html#domain-healthcare"><div class="icon-box"><i class="fa-solid fa-heart-pulse"></i></div><div><h3>Healthcare & Medical Research</h3><p>10 focus areas</p></div></a></div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section-head"><span class="eyebrow">Our process</span><h2>A Structured Approach to Research Support</h2>
+  <p>A transparent journey from understanding your requirement to reviewing the work and incorporating feedback.</p></div>
+  <div class="grid grid-3"><div class="card step-mini"><div class="num">01</div><h3>Share Your Research Requirement</h3><p style="font-size:.92rem;margin:0">The process begins when you share your research requirement with us.</p></div><div class="card step-mini"><div class="num">02</div><h3>Requirement Assessment</h3><p style="font-size:.92rem;margin:0">Once we receive your requirement, our team reviews the scope of the research and identifies the type of academic, technical, analytical, or editorial support that may be required.</p></div><div class="card step-mini"><div class="num">03</div><h3>Research Planning</h3><p style="font-size:.92rem;margin:0">After understanding the requirements, a structured plan is developed based on the agreed scope of support.</p></div><div class="card step-mini"><div class="num">04</div><h3>Expert Support & Development</h3><p style="font-size:.92rem;margin:0">Based on the nature of the project, relevant academic, technical, analytical, or editorial support is provided.</p></div><div class="card step-mini"><div class="num">05</div><h3>Review & Quality Check</h3><p style="font-size:.92rem;margin:0">Before completing each stage, the work is reviewed based on the applicable project requirements.</p></div><div class="card step-mini"><div class="num">06</div><h3>Feedback & Refinement</h3><p style="font-size:.92rem;margin:0">Research often evolves through discussion, feedback, and refinement.</p></div></div>
+  <p style="text-align:center;margin-top:32px"><a class="btn btn-outline" href="process.html">See the full process</a></p>
+</div></section>
+
+<section class="section soft"><div class="container">
+  <div class="section-head"><span class="eyebrow">Blogs</span><h2>Insights for Researchers</h2></div>
+  <div class="grid grid-2" style="max-width:900px;margin:0 auto"><a class="card blog-card" href="blog-detail.html?b=quality-research-proposal"><div class="thumb"><img src="https://picsum.photos/id/20/800/450" alt="" loading="lazy"></div>
+  <div class="body"><div class="meta"><span class="tag">Research Proposal</span><span>3 min read</span></div><h3>How to Write a Quality Research Proposal?</h3><p>Writing a quality research proposal is of utmost importance to start your PhD journey. The emphasis should be on the uniqueness of the research being presented.</p>
+  <span class="link-arrow">Read article <i class="fa-solid fa-arrow-right"></i></span></div></a><a class="card blog-card" href="blog-detail.html?b=impactful-journal-paper"><div class="thumb"><img src="https://picsum.photos/id/24/800/450" alt="" loading="lazy"></div>
+  <div class="body"><div class="meta"><span class="tag">Publication</span><span>2 min read</span></div><h3>How to Make a Journal Paper Impactful?</h3><p>Any research focuses on the novelty in the topic selected and how original your ideas are to the particular research area.</p>
+  <span class="link-arrow">Read article <i class="fa-solid fa-arrow-right"></i></span></div></a></div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section-head"><span class="eyebrow">FAQ</span><h2>Frequently Asked Questions</h2></div>
+  <div class="faq-list"><div class="faq-item"><button class="faq-q" aria-expanded="false">What research support services do you provide?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>We provide comprehensive research support for PhD scholars, postgraduate students, and researchers, including research proposal and synopsis preparation, literature review, research methodology, data analysis, thesis and dissertation support, research paper writing, manuscript preparation, and publication guidance.</p></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false">Can you help me choose or refine my research topic?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Yes. We can help you evaluate your research idea, identify research gaps, refine the research problem, formulate objectives and research questions, and develop a clear and researchable topic aligned with your academic domain.</p></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false">Do you provide support with statistical analysis and interpretation?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Yes. We provide support for data preparation, statistical analysis, selection of appropriate tests, result interpretation, tables and graphical presentation, and discussion of findings using suitable statistical methodologies and software.</p></div></div></div>
+  <p style="text-align:center;margin-top:28px"><a class="link-arrow" href="faq.html">More questions <i class="fa-solid fa-arrow-right"></i></a></p>
+</div></section>
+<section class="section"><div class="container"><div class="cta-band">
+  <div><h2>Ready to refine your research?</h2><p>Share your requirement and our consultant will connect with you at the earliest to schedule a consultation with a Subject Matter Expert.</p></div>
+  <div class="actions"><a class="btn btn-accent" href="contact.html">Book Consultation</a>
+  <a class="btn btn-whatsapp" href="https://wa.me/919187559443?text=Hi%20Proofix" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a></div></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Proofix Technologies">
+        <p>Proofix Technologies Pvt Ltd provides professional academic research assistance and technical research support for scholars, researchers, faculty members and academic professionals.</p>
       </div>
-    </section>
-
-    <!-- ==========================================================================
-         IMPACT IN NUMBERS (METRICS GRID)
-         ========================================================================== -->
-    <section class="impact-section" id="impactStats">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fa-solid fa-user-graduate"></i>
-            </div>
-            <div class="stat-number" data-count="500" data-suffix="+">500+</div>
-            <div class="stat-label">PhD Scholars Guided</div>
-            <p class="stat-subtext">Successfully mentored across multifaceted disciplines</p>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fa-solid fa-building-columns"></i>
-            </div>
-            <div class="stat-number" data-count="50" data-suffix="+">50+</div>
-            <div class="stat-label">Partner Universities</div>
-            <p class="stat-subtext">Collaborations with leading academic institutions</p>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fa-solid fa-chart-line"></i>
-            </div>
-            <div class="stat-number" data-count="98" data-suffix="%">98%</div>
-            <div class="stat-label">Success Rate</div>
-            <p class="stat-subtext">Scholars achieving approved proposals & publications</p>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fa-solid fa-trophy"></i>
-            </div>
-            <div class="stat-number" data-count="120" data-suffix="+">120+</div>
-            <div class="stat-label">Indexed Publications</div>
-            <p class="stat-subtext">Scopus, SCI, and Web of Science indexed outcomes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         FEATURED SERVICES OVERVIEW
-         ========================================================================== -->
-    <section class="services-overview-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag blue">
-            <i class="fa-solid fa-layer-group"></i> Comprehensive Academic Guidance
-          </span>
-          <h2 class="section-title">Research Support for Every Stage of Your Journey</h2>
-          <p class="section-subtitle">
-            Every research project is unique. Proofix provides customized support tailored to your research stage, subject area, and academic objectives.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          <!-- 1. Proposal Support -->
-          <div class="service-card">
-            <div class="service-card-header">
-              <div class="service-icon"><i class="fa-solid fa-file-signature"></i></div>
-              <h3 class="service-card-title">Research Proposal & Synopsis Support</h3>
-            </div>
-            <p class="service-card-desc">Develop structured proposals with clear problem statements and research objectives aligned with institutional guidelines.</p>
-            <div class="service-features-list">
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Basepaper finalization & topic refinement</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Identification of significant research gaps</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Hypothesis formulation & objective mapping</div>
-            </div>
-            <a href="services.html#service-proposal" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-
-          <!-- 2. Literature Review -->
-          <div class="service-card">
-            <div class="service-card-header">
-              <div class="service-icon"><i class="fa-solid fa-book-open-reader"></i></div>
-              <h3 class="service-card-title">Literature Review Support</h3>
-            </div>
-            <p class="service-card-desc">Synthesize and categorize peer-reviewed literature to establish the necessity and theoretical basis of your study.</p>
-            <div class="service-features-list">
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Literature search strategy & database curation</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Thematic & chronological synthesis</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Citation & reference management (APA, IEEE)</div>
-            </div>
-            <a href="services.html#service-literature" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-
-          <!-- 3. Research Methodology -->
-          <div class="service-card">
-            <div class="service-card-header">
-              <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-              <h3 class="service-card-title">Research Methodology Support</h3>
-            </div>
-            <p class="service-card-desc">Ensure the reliability of your study with structured qualitative, quantitative, or experimental research design selection.</p>
-            <div class="service-features-list">
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Qualitative & quantitative framework design</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Sampling strategies & variable identification</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Algorithm selection for technical studies</div>
-            </div>
-            <a href="services.html#service-methodology" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-
-          <!-- 4. Data Analysis & Statistics -->
-          <div class="service-card">
-            <div class="service-card-header">
-              <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
-              <h3 class="service-card-title">Data Analysis & Statistical Support</h3>
-            </div>
-            <p class="service-card-desc">Transform complex raw datasets into meaningful interpretations through robust statistical methods and machine learning models.</p>
-            <div class="service-features-list">
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Data cleaning, exploratory & descriptive analysis</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Hypothesis testing, regression, & multivariate tests</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Academic charts, tables, & figure generation</div>
-            </div>
-            <a href="services.html#service-analysis" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-
-          <!-- 5. Thesis & Dissertation Support -->
-          <div class="service-card">
-            <div class="service-card-header">
-              <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-              <h3 class="service-card-title">Thesis & Dissertation Support</h3>
-            </div>
-            <p class="service-card-desc">End-to-end guidance to maintain seamless logical flow and scholarly consistency across every chapter of your thesis.</p>
-            <div class="service-features-list">
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Chapter-wise organization & objective alignment</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Discussion, findings, & future scope synthesis</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Strict institutional formatting adherence</div>
-            </div>
-            <a href="services.html#service-thesis" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-
-          <!-- 6. Paper & Publication Support -->
-          <div class="service-card">
-            <div class="service-card-header">
-              <div class="service-icon"><i class="fa-solid fa-newspaper"></i></div>
-              <h3 class="service-card-title">Manuscript & Publication Support</h3>
-            </div>
-            <p class="service-card-desc">Prepare peer-review ready manuscripts for publication in indexed journals (Scopus, SCI, IEEE, Springer, Elsevier).</p>
-            <div class="service-features-list">
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Target journal identification & scope match</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Peer reviewer comment analysis & revision</div>
-              <div class="service-feature-item"><i class="fa-solid fa-check"></i> Academic editing & pre-submission review</div>
-            </div>
-            <a href="services.html#service-publication" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div style="text-align: center;">
-          <a href="services.html" class="btn btn-blue" style="padding: 14px 34px;">
-            <span>View All 8 Core Services</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         INTERACTIVE SERVICE FINDER (QUIZ WIDGET)
-         ========================================================================== -->
-    <section class="quiz-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">
-            <i class="fa-solid fa-wand-magic-sparkles"></i> Personalized Roadmap
-          </span>
-          <h2 class="section-title">Find Your Perfect Service</h2>
-          <p class="section-subtitle">Answer 3 brief questions to receive structured support matched to your exact research stage.</p>
-        </div>
-
-        <div class="quiz-container">
-          <div class="quiz-progress-header">
-            <span id="quizStepDisplay">Question 1 of 3</span>
-            <span id="quizPctDisplay">33% Complete</span>
-          </div>
-
-          <div class="progress-bar-wrap">
-            <div class="progress-bar-fill" id="quizProgressBar"></div>
-          </div>
-
-          <!-- Question Interactive Box -->
-          <div id="quizQuestionBox" class="quiz-question-box">
-            <h3 id="quizQuestionTitle">What stage are you at in your PhD / research journey?</h3>
-            <div class="quiz-options-list" id="quizOptionsList">
-              <!-- Rendered dynamically by jQuery home.js -->
-            </div>
-          </div>
-
-          <!-- Result Display Box -->
-          <div id="quizResultBox" class="quiz-result-box">
-            <div style="width: 56px; height: 56px; background: var(--accent-gold-light); color: var(--accent-gold); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 16px;">
-              <i class="fa-solid fa-circle-check"></i>
-            </div>
-            <h4 id="recommendedServiceTitle">Recommended Service Package</h4>
-            <p id="recommendedServiceDesc" style="max-width: 600px; margin: 0 auto 24px auto;">
-              We have identified the optimal research pathway for your profile. Connect with our dedicated domain specialist to begin.
-            </p>
-            <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-              <a href="contact.html" class="btn btn-primary">
-                <span>Book Free Consultation</span>
-                <i class="fa-solid fa-calendar-check"></i>
-              </a>
-              <button id="restartQuizBtn" class="btn btn-outline-dark">
-                <span>Retake Assessment</span>
-                <i class="fa-solid fa-rotate-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         TRUSTED UNIVERSITY NETWORK
-         ========================================================================== -->
-    <section class="partners-section">
-      <div class="container">
-        <span class="section-tag blue">
-          <i class="fa-solid fa-globe"></i> Global Academic Reach
-        </span>
-        <h2 class="section-title" style="font-size: 2rem;">Scholars Placed & Guided Across Esteemed Institutions</h2>
-        <p class="section-subtitle">We have successfully guided scholars pursuing doctorates and post-graduate studies internationally.</p>
-
-        <div class="partners-grid">
-          <div class="partner-card">
-            <div class="partner-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-            <div class="partner-name">Stanford University</div>
-            <div class="partner-country">United States</div>
-          </div>
-          <div class="partner-card">
-            <div class="partner-icon"><i class="fa-solid fa-atom"></i></div>
-            <div class="partner-name">MIT</div>
-            <div class="partner-country">United States</div>
-          </div>
-          <div class="partner-card">
-            <div class="partner-icon"><i class="fa-solid fa-landmark"></i></div>
-            <div class="partner-name">University of Cambridge</div>
-            <div class="partner-country">United Kingdom</div>
-          </div>
-          <div class="partner-card">
-            <div class="partner-icon"><i class="fa-solid fa-book-bookmark"></i></div>
-            <div class="partner-name">National University of Singapore</div>
-            <div class="partner-country">Singapore</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         TESTIMONIALS SECTION
-         ========================================================================== -->
-    <section class="testimonials-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">
-            <i class="fa-solid fa-star"></i> Scholar Feedback
-          </span>
-          <h2 class="section-title">Transforming Dreams into Doctoral Achievements</h2>
-          <p class="section-subtitle">Real experiences from researchers who reached critical milestones with Proofix assistance.</p>
-        </div>
-
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div>
-              <div class="testimonial-rating">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              </div>
-              <p class="testimonial-quote">
-                “The statistical analysis team at Proofix helped me structure my Python and SPSS data models effectively. My supervisor was immensely impressed with the clarity of the result graphs.”
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">ET</div>
-              <div class="author-info">
-                <h5>Emily Thompson</h5>
-                <span>PhD in Neuroscience, Stanford</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div>
-              <div class="testimonial-rating">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              </div>
-              <p class="testimonial-quote">
-                “Formulating a novel problem statement felt insurmountable until I consulted Proofix. Their literature synthesis identified precise research gaps that became the core of my approved thesis.”
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">AM</div>
-              <div class="author-info">
-                <h5>Arjun Mehta</h5>
-                <span>PhD in Computer Science, IIT</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div>
-              <div class="testimonial-rating">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              </div>
-              <p class="testimonial-quote">
-                “Responding to major revision comments from an IEEE Transactions reviewer was overwhelming. Proofix guided our point-by-point defense, and our paper was accepted in the subsequent round.”
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">DC</div>
-              <div class="author-info">
-                <h5>David Chen</h5>
-                <span>PhD in Mechanical Engineering, Cambridge</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         CALL TO ACTION BANNER
-         ========================================================================== -->
-    <section class="cta-banner-section">
-      <div class="container">
-        <div class="cta-banner-content">
-          <span class="section-tag" style="background: rgba(255,255,255,0.1); color: var(--accent-gold); border-color: rgba(255,255,255,0.2);">
-            <i class="fa-solid fa-rocket"></i> Ready to Begin?
-          </span>
-          <h2 class="section-title">Transform Your Academic Potential into Doctoral Success</h2>
-          <p class="section-subtitle">
-            Join hundreds of successful scholars who expedited their research journey with expert guidance. Book your free initial consultation today.
-          </p>
-          <div class="cta-banner-actions">
-            <a href="contact.html" class="btn btn-primary" style="padding: 15px 32px;">
-              <i class="fa-solid fa-calendar-check"></i> Book Free Consultation
-            </a>
-            <a href="services.html" class="btn btn-secondary" style="padding: 15px 32px;">
-              <i class="fa-solid fa-compass"></i> Explore All Services
-            </a>
-          </div>
-          <div class="cta-badges">
-            <div class="cta-badge-item"><i class="fa-solid fa-circle-check"></i> No Upfront Commitment Required</div>
-            <div class="cta-badge-item"><i class="fa-solid fa-circle-check"></i> Expert PhD Mentors</div>
-            <div class="cta-badge-item"><i class="fa-solid fa-circle-check"></i> Strict Confidentiality Protected</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         NEWSLETTER / RESEARCH UPDATES
-         ========================================================================== -->
-    <section class="newsletter-section">
-      <div class="container">
-        <div class="newsletter-card">
-          <div style="font-size: 2rem; color: var(--accent-blue); margin-bottom: 12px;">
-            <i class="fa-regular fa-envelope-open"></i>
-          </div>
-          <h3 style="font-family: var(--font-heading); font-size: 1.7rem; color: var(--primary-dark); margin-bottom: 8px;">
-            Stay Updated on Research Grants & PhD Opportunities
-          </h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem;">
-            Receive exclusive academic writing tips, methodology templates, and upcoming conference deadlines directly in your inbox.
-          </p>
-          <form class="newsletter-form" id="newsletterForm">
-            <input type="email" class="newsletter-input" placeholder="Enter your official academic email address..." required>
-            <button type="submit" class="btn btn-blue" style="padding: 12px 24px;">Subscribe Now</button>
-          </form>
-          <div style="display: flex; gap: 20px; justify-content: center; font-size: 0.82rem; color: var(--text-muted); flex-wrap: wrap;">
-            <span><i class="fa-solid fa-check" style="color: var(--accent-emerald);"></i> Weekly Research Tips</span>
-            <span><i class="fa-solid fa-check" style="color: var(--accent-emerald);"></i> Journal Alerts</span>
-            <span><i class="fa-solid fa-check" style="color: var(--accent-emerald);"></i> No Spam Ever</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ==========================================================================
-       COMMON FOOTER
-       ========================================================================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <!-- Col 1: Brand Info -->
-        <div class="footer-col footer-brand">
-          <a href="index.html" class="brand-logo" style="margin-bottom: 14px;">
-            <div class="brand-icon">P</div>
-            <div class="brand-text">
-              <span class="brand-name">Proofix<span>.</span></span>
-              <span class="brand-subtext">Technologies</span>
-            </div>
-          </a>
-          <p class="footer-tagline">
-            Proofix Technologies Pvt Ltd empowers scholars, researchers, and faculty members through structured, professional, and ethical academic research support.
-          </p>
-          <div class="footer-socials">
-            <a href="https://wa.me/919187559443" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="mailto:proofix.tech@gmail.com" class="social-btn" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
-            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" class="social-btn" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-          </div>
-        </div>
-
-        <!-- Col 2: Navigation Links -->
-        <div class="footer-col">
-          <h4>Quick Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
-            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us - Why Proofix</a></li>
-            <li><a href="process.html"><i class="fa-solid fa-angle-right"></i> Our 6-Phase Process</a></li>
-            <li><a href="blogs.html"><i class="fa-solid fa-angle-right"></i> Academic Blogs</a></li>
-            <li><a href="faq.html"><i class="fa-solid fa-angle-right"></i> FAQ</a></li>
-            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Research Services -->
-        <div class="footer-col">
-          <h4>Core Services</h4>
-          <ul class="footer-links">
-            <li><a href="services.html#service-proposal"><i class="fa-solid fa-angle-right"></i> Proposal & Synopsis</a></li>
-            <li><a href="services.html#service-literature"><i class="fa-solid fa-angle-right"></i> Literature Review</a></li>
-            <li><a href="services.html#service-methodology"><i class="fa-solid fa-angle-right"></i> Research Methodology</a></li>
-            <li><a href="services.html#service-analysis"><i class="fa-solid fa-angle-right"></i> Statistical Analysis</a></li>
-            <li><a href="services.html#service-thesis"><i class="fa-solid fa-angle-right"></i> Thesis & Dissertation</a></li>
-            <li><a href="services.html#service-publication"><i class="fa-solid fa-angle-right"></i> Journal Publication</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 4: Contact Info -->
-        <div class="footer-col">
-          <h4>Get in Touch</h4>
-          <div class="footer-contact-info">
-            <div class="contact-info-item">
-              <i class="fa-solid fa-envelope"></i>
-              <div>
-                <strong>Email Us:</strong><br>
-                <a href="mailto:proofix.tech@gmail.com" style="color: rgba(255,255,255,0.85);">proofix.tech@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <i class="fa-solid fa-phone"></i>
-              <div>
-                <strong>Call / WhatsApp:</strong><br>
-                <a href="tel:+919187559443" style="color: rgba(255,255,255,0.85);">+91 91875 59443</a>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <i class="fa-solid fa-clock"></i>
-              <div>
-                <strong>Working Hours:</strong><br>
-                Mon - Sat: 9:30 AM - 6:30 PM IST
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <div>&copy; 2026 Proofix Technologies Pvt Ltd. All rights reserved.</div>
-        <div class="footer-legal-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Academic Support</a>
-          <a href="#">Ethical Research Guidelines</a>
-        </div>
-      </div>
+      <div><h4>Quick Links</h4><ul>
+        <li><a href="about.html">About Us</a></li><li><a href="research-domains.html">Research Domains</a></li><li><a href="process.html">Our Process</a></li>
+        <li><a href="blogs.html">Blogs</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="service-detail.html?s=proposal">Research Proposal & Synopsis Support</a></li><li><a href="service-detail.html?s=literature">Literature Review Support</a></li><li><a href="service-detail.html?s=methodology">Research Methodology Support</a></li><li><a href="service-detail.html?s=analysis">Data Analysis & Statistical Support</a></li><li><a href="service-detail.html?s=thesis">Thesis & Dissertation Support</a></li><li><a href="service-detail.html?s=manuscript">Research Paper & Manuscript Support</a></li><li><a href="service-detail.html?s=publication">Publication Support</a></li><li><a href="service-detail.html?s=editing">Academic Editing & Proofreading</a></li></ul></div>
+      <div><h4>Get in Touch</h4><ul class="footer-contact">
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto:proofix.tech@gmail.com">proofix.tech@gmail.com</a></li>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+919187559443">+91 91875 59443</a></li>
+        <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/919187559443" target="_blank" rel="noopener">Chat on WhatsApp</a></li></ul></div>
     </div>
-  </footer>
-
-  <!-- WhatsApp Floating Trigger -->
-  <a href="https://wa.me/919187559443?text=Hi%20Proofix%2C%20I%20am%20looking%20for%20academic%20research%20assistance." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
-    <i class="fa-solid fa-chevron-up"></i>
-  </button>
-
-  <!-- jQuery & Application Scripts -->
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/home.js"></script>
+    <div class="footer-bottom"><span>&copy; 2026 Proofix Technologies Pvt Ltd. All rights reserved.</span><span>Empowering Research. Enabling Excellence.</span></div>
+  </div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/919187559443?text=Hi%20Proofix" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

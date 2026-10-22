@@ -3,477 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Process | Proofix Technologies - Structured Research Support</title>
-  <meta name="description" content="Discover Proofix's 6-phase structured approach from research requirement to result: Assessment, Planning, Development, Quality Checks, and Refinement.">
-  
-  <!-- Font Awesome Icons -->
+  <title>Our Process | Proofix Technologies</title>
+  <meta name="description" content="A structured, transparent six-phase approach to research support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Common & Page Styles -->
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/process.css">
 </head>
 <body>
-
-  <!-- ==========================================================================
-       COMMON HEADER
-       ========================================================================== -->
-  <header class="site-header" id="siteHeader">
-    <div class="container header-container">
-      <a href="index.html" class="brand-logo" aria-label="Proofix Technologies Home">
-        <div class="brand-icon">P</div>
-        <div class="brand-text">
-          <span class="brand-name">Proofix<span>.</span></span>
-          <span class="brand-subtext">Technologies</span>
-        </div>
-      </a>
-
-      <!-- Desktop & Mobile Nav Menu -->
-      <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About Us - Why Proofix</a>
-        
-        <!-- Services Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="services.html" class="nav-link">
-            Services <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem;"></i>
-          </a>
-          <div class="nav-dropdown">
-            <a href="services.html#service-proposal" class="dropdown-link">
-              <i class="fa-solid fa-file-signature"></i> Research Proposal & Synopsis
-            </a>
-            <a href="services.html#service-literature" class="dropdown-link">
-              <i class="fa-solid fa-book-open-reader"></i> Literature Review Support
-            </a>
-            <a href="services.html#service-methodology" class="dropdown-link">
-              <i class="fa-solid fa-compass-drafting"></i> Research Methodology
-            </a>
-            <a href="services.html#service-analysis" class="dropdown-link">
-              <i class="fa-solid fa-chart-pie"></i> Data Analysis & Statistics
-            </a>
-            <a href="services.html#service-thesis" class="dropdown-link">
-              <i class="fa-solid fa-graduation-cap"></i> Thesis & Dissertation
-            </a>
-            <a href="services.html#service-manuscript" class="dropdown-link">
-              <i class="fa-solid fa-newspaper"></i> Paper & Manuscript Support
-            </a>
-            <a href="services.html#service-publication" class="dropdown-link">
-              <i class="fa-solid fa-upload"></i> Publication Support
-            </a>
-            <a href="services.html#service-editing" class="dropdown-link">
-              <i class="fa-solid fa-spell-check"></i> Academic Editing & Proofreading
-            </a>
-          </div>
-        </div>
-
-        <!-- Research Domains Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="research-domains.html" class="nav-link">
-            Research Domains <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem;"></i>
-          </a>
-          <div class="nav-dropdown">
-            <a href="research-domains.html#domain-engineering" class="dropdown-link">
-              <i class="fa-solid fa-microchip"></i> Engineering & Technology
-            </a>
-            <a href="research-domains.html#domain-cs-it" class="dropdown-link">
-              <i class="fa-solid fa-network-wired"></i> Computer Science & IT
-            </a>
-            <a href="research-domains.html#domain-ai-ml" class="dropdown-link">
-              <i class="fa-solid fa-brain"></i> Artificial Intelligence & ML
-            </a>
-            <a href="research-domains.html#domain-datascience" class="dropdown-link">
-              <i class="fa-solid fa-chart-line"></i> Data Science & Analytics
-            </a>
-            <a href="research-domains.html#domain-management" class="dropdown-link">
-              <i class="fa-solid fa-briefcase"></i> Management & Business
-            </a>
-            <a href="research-domains.html#domain-healthcare" class="dropdown-link">
-              <i class="fa-solid fa-heart-pulse"></i> Healthcare & Medical
-            </a>
-          </div>
-        </div>
-
-        <a href="process.html" class="nav-link active">Our Process</a>
-        <a href="blogs.html" class="nav-link">Blogs</a>
-        <a href="faq.html" class="nav-link">FAQ</a>
-        <a href="contact.html" class="nav-link">Contact Us</a>
-      </nav>
-
-      <div class="header-actions">
-        <a href="contact.html" class="btn btn-primary header-btn">
-          <span>Book Consultation</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Proofix Technologies home"><img src="assets/images/logo.png" alt="Proofix Technologies" width="105" height="46"></a>
+    <nav class="nav" id="nav" aria-label="Main">
+        <button class="nav-close" id="navClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <div class="has-menu"><button class="nav-link" aria-haspopup="true">Services <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="menu"><a href="services.html">All Services</a><a href="service-detail.html?s=proposal">Research Proposal & Synopsis Support</a><a href="service-detail.html?s=literature">Literature Review Support</a><a href="service-detail.html?s=methodology">Research Methodology Support</a><a href="service-detail.html?s=analysis">Data Analysis & Statistical Support</a><a href="service-detail.html?s=thesis">Thesis & Dissertation Support</a><a href="service-detail.html?s=manuscript">Research Paper & Manuscript Support</a><a href="service-detail.html?s=publication">Publication Support</a><a href="service-detail.html?s=editing">Academic Editing & Proofreading</a></div></div>
+        <div class="has-menu"><button class="nav-link" aria-haspopup="true">Research Domains <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="menu"><a href="research-domains.html">All Domains</a><a href="research-domains.html#domain-engineering">Engineering & Technology</a><a href="research-domains.html#domain-cs-it">Computer Science & Information Technology</a><a href="research-domains.html#domain-ai-ml">Artificial Intelligence & Machine Learning</a><a href="research-domains.html#domain-datascience">Data Science & Analytics</a><a href="research-domains.html#domain-management">Management & Business Research</a><a href="research-domains.html#domain-healthcare">Healthcare & Medical Research</a></div></div>
+        <a class="nav-link active" href="process.html">Our Process</a>
+        <a class="nav-link" href="blogs.html">Blogs</a>
+        <a class="nav-link" href="faq.html">FAQ</a>
+        <a class="btn btn-accent nav-cta" href="contact.html">Book Consultation</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-accent header-cta" href="contact.html">Book Consultation</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
-  </header>
-
-  <!-- ==========================================================================
-       PAGE HERO
-       ========================================================================== -->
-  <main>
-    <section class="process-hero">
-      <div class="container">
-        <div class="process-hero-content">
-          <span class="section-tag" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.18); color: var(--accent-gold);">
-            <i class="fa-solid fa-diagram-project"></i> Methodology & Workflow
-          </span>
-          <h1 class="process-hero-title">
-            Structured Approach to <span>Research Support</span>
-          </h1>
-          <p class="process-hero-desc">
-            At Proofix Technologies Pvt Ltd, we believe that effective research support begins with a clear understanding of the researcher's requirements. Every project is unique, with different objectives, methodologies, technical challenges, and academic expectations.
-          </p>
-        </div>
+  </div>
+</header>
+<main id="main">
+<section class="page-banner"><div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Our Process</span></nav>
+  <h1>Structured Approach to Research Support</h1><p>A clear understanding of your requirement, a transparent plan, expert support and collaborative refinement.</p></div></section>
+<section class="section soft"><div class="container" style="max-width:960px"><div class="timeline">
+<div class="phase"><div class="badge">1</div><div class="card">
+  <span class="label">Phase 1</span><h3>Share Your Research Requirement</h3>
+  <p>The process begins when you share your research requirement with us. You can provide details about your research area, current stage, objectives, challenges, and the type of support you are looking for.</p><p><strong style="color:var(--ink)">To help us understand your requirement better, you may share information such as:</strong></p><ul class="check-list two-col"><li>Research domain or subject area</li><li>Research topic or tentative title</li><li>Current stage of research</li><li>Research objectives</li><li>Specific challenges or requirements</li><li>Available documents or materials</li><li>Institutional or journal guidelines, where applicable</li><li>Expected timeline</li></ul><div class="note-box">The more clearly we understand your research requirement, the better we can identify the appropriate support approach.</div></div></div><div class="phase"><div class="badge">2</div><div class="card">
+  <span class="label">Phase 2</span><h3>Requirement Assessment</h3>
+  <p>Once we receive your requirement, our team reviews the scope of the research and identifies the type of academic, technical, analytical, or editorial support that may be required.</p><p><strong style="color:var(--ink)">During this stage, we focus on understanding:</strong></p><ul class="check-list two-col"><li>The research problem and objectives</li><li>The current progress of the project</li><li>Required methodology or technical approach</li><li>Data and analysis requirements</li><li>Documentation requirements</li><li>Expected deliverables</li><li>Project complexity and scope</li></ul><div class="note-box">If additional clarification is required, we may discuss the requirement with you to ensure a clear understanding before proceeding.</div></div></div><div class="phase"><div class="badge">3</div><div class="card">
+  <span class="label">Phase 3</span><h3>Research Planning</h3><div class="tagline">Creating a Clear Support Roadmap</div>
+  <p>After understanding the requirements, a structured plan is developed based on the agreed scope of support.</p><p><strong style="color:var(--ink)">The research support plan may include:</strong></p><ul class="check-list two-col"><li>Identification of key tasks</li><li>Development of a structured workflow</li><li>Selection of appropriate methods or approaches</li><li>Definition of project milestones</li><li>Identification of required inputs and resources</li><li>Planning of review and feedback stages</li></ul><div class="note-box">A clear plan helps transform a complex research requirement into manageable stages.</div></div></div><div class="phase"><div class="badge">4</div><div class="card">
+  <span class="label">Phase 4</span><h3>Expert Support & Development</h3><div class="tagline">Moving from Plan to Progress</div>
+  <p>Based on the nature of the project, relevant academic, technical, analytical, or editorial support is provided.</p><p><strong style="color:var(--ink)">Depending on the agreed scope, this stage may involve:</strong></p><ul class="check-list two-col"><li>Research proposal or synopsis support</li><li>Literature review organization</li><li>Methodology development</li><li>Technical research implementation</li><li>Data analysis and statistical support</li><li>Model or framework development</li><li>Thesis and dissertation structuring</li><li>Research manuscript improvement</li><li>Academic editing and proofreading</li><li>Publication-readiness support</li></ul><div class="note-box">Throughout the process, the focus remains on maintaining clarity, consistency, and alignment with the agreed research objectives.</div></div></div><div class="phase"><div class="badge">5</div><div class="card">
+  <span class="label">Phase 5</span><h3>Review & Quality Check</h3><div class="tagline">Refining for Quality and Consistency</div>
+  <p>Before completing each stage, the work is reviewed based on the applicable project requirements.</p><p><strong style="color:var(--ink)">The review may focus on:</strong></p><ul class="check-list two-col"><li>Alignment with research objectives</li><li>Logical structure and consistency</li><li>Methodological clarity</li><li>Technical accuracy</li><li>Analytical interpretation</li><li>Academic language and presentation</li><li>Formatting requirements</li><li>Citation and reference consistency</li></ul><div class="note-box">Quality is not just about completing a task — it is about ensuring that the work is clear, structured, and aligned with its intended purpose.</div></div></div><div class="phase"><div class="badge">6</div><div class="card">
+  <span class="label">Phase 6</span><h3>Feedback & Refinement</h3><div class="tagline">Improving Through Collaboration</div>
+  <p>Research often evolves through discussion, feedback, and refinement. Based on the agreed scope of support, feedback can be incorporated to improve clarity, structure, and overall quality.</p><p><strong style="color:var(--ink)">This stage may include:</strong></p><ul class="check-list two-col"><li>Addressing relevant feedback</li><li>Clarifying research-related questions</li><li>Revising agreed sections</li><li>Refining analysis or presentation</li><li>Improving structure and consistency</li><li>Incorporating applicable institutional, supervisor, editor, or reviewer feedback</li></ul><div class="note-box">Our objective is to support a constructive refinement process while maintaining the agreed project scope and requirements.</div></div></div>
+</div></div></section>
+<section class="section"><div class="container"><div class="cta-band">
+  <div><h2>Ready for Phase 1?</h2><p>Share your research requirement and we will take it from there.</p></div>
+  <div class="actions"><a class="btn btn-accent" href="contact.html">Book Consultation</a>
+  <a class="btn btn-whatsapp" href="https://wa.me/919187559443?text=Hi%20Proofix" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a></div></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Proofix Technologies">
+        <p>Proofix Technologies Pvt Ltd provides professional academic research assistance and technical research support for scholars, researchers, faculty members and academic professionals.</p>
       </div>
-    </section>
-
-    <!-- Mini 6-Phase Flow Cards -->
-    <section class="process-flow-overview">
-      <div class="container">
-        <div style="text-align: center; margin-bottom: 24px;">
-          <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--primary-dark);">Our Process at a Glance</h2>
-          <span style="font-size: 0.9rem; color: var(--text-muted);">A structured approach from requirement to publication-ready result</span>
-        </div>
-
-        <div class="flow-cards-grid">
-          <div class="flow-card-mini active" data-target="#phase-1">
-            <div class="flow-phase-tag">PHASE 01</div>
-            <div class="flow-phase-name">Share Your Requirement</div>
-          </div>
-          <div class="flow-card-mini" data-target="#phase-2">
-            <div class="flow-phase-tag">PHASE 02</div>
-            <div class="flow-phase-name">Requirement Assessment</div>
-          </div>
-          <div class="flow-card-mini" data-target="#phase-3">
-            <div class="flow-phase-tag">PHASE 03</div>
-            <div class="flow-phase-name">Research Planning</div>
-          </div>
-          <div class="flow-card-mini" data-target="#phase-4">
-            <div class="flow-phase-tag">PHASE 04</div>
-            <div class="flow-phase-name">Expert Support</div>
-          </div>
-          <div class="flow-card-mini" data-target="#phase-5">
-            <div class="flow-phase-tag">PHASE 05</div>
-            <div class="flow-phase-name">Review & Quality Check</div>
-          </div>
-          <div class="flow-card-mini" data-target="#phase-6">
-            <div class="flow-phase-tag">PHASE 06</div>
-            <div class="flow-phase-name">Feedback & Refinement</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         DETAILED PHASES
-         ========================================================================== -->
-    <section class="process-detail-section">
-      <div class="container">
-        <div class="phases-list">
-
-          <!-- Phase 1 -->
-          <article class="phase-card" id="phase-1">
-            <div class="phase-header">
-              <div class="phase-title-group">
-                <div class="phase-num">01</div>
-                <div>
-                  <h3 class="phase-title">Phase 1: Share Your Research Requirement</h3>
-                  <span class="phase-subtitle">The Starting Point of Collaboration</span>
-                </div>
-              </div>
-              <a href="contact.html" class="btn btn-primary" style="padding: 9px 20px;">Begin Step 1</a>
-            </div>
-
-            <p class="phase-desc">
-              The process begins when you share your research requirement with us. You can provide details about your research area, current stage, objectives, challenges, and the type of support you are looking for. The more clearly we understand your requirement, the better we can identify the appropriate support approach.
-            </p>
-
-            <div class="phase-points-title"><i class="fa-solid fa-list-check"></i> To help us understand your requirement better, you may share:</div>
-            <div class="phase-points-grid">
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Research domain or subject area</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Research topic or tentative title</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Current stage of research</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Specific research objectives & questions</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Specific analytical or writing challenges</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Available raw documents, datasets, or materials</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Institutional or target journal guidelines</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Expected completion timeline and milestones</div>
-            </div>
-          </article>
-
-          <!-- Phase 2 -->
-          <article class="phase-card" id="phase-2">
-            <div class="phase-header">
-              <div class="phase-title-group">
-                <div class="phase-num">02</div>
-                <div>
-                  <h3 class="phase-title">Phase 2: Requirement Assessment</h3>
-                  <span class="phase-subtitle">Deep Scope & Feasibility Evaluation</span>
-                </div>
-              </div>
-            </div>
-
-            <p class="phase-desc">
-              Once we receive your requirement, our senior team reviews the scope of the research and identifies the type of academic, technical, analytical, or editorial support required. If additional clarification is required, we may schedule an introductory discussion to ensure complete mutual understanding.
-            </p>
-
-            <div class="phase-points-title"><i class="fa-solid fa-magnifying-glass"></i> During this stage, we focus on understanding:</div>
-            <div class="phase-points-grid">
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> The fundamental research problem and objectives</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> The current progress and existing draft status</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Required methodology or technical approach</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Data and analysis requirements (software & tools)</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Documentation requirements & institutional formats</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Expected deliverables and academic output</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Project complexity, scope, and timeline feasibility</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Alignment with ethical publishing guidelines</div>
-            </div>
-          </article>
-
-          <!-- Phase 3 -->
-          <article class="phase-card" id="phase-3">
-            <div class="phase-header">
-              <div class="phase-title-group">
-                <div class="phase-num">03</div>
-                <div>
-                  <h3 class="phase-title">Phase 3: Research Planning</h3>
-                  <span class="phase-subtitle">Creating a Clear Support Roadmap</span>
-                </div>
-              </div>
-            </div>
-
-            <p class="phase-desc">
-              After understanding the requirements, a structured plan is developed based on the agreed scope of support. This step establishes absolute clarity and ensures that the research support process follows a systematic, stress-free direction. A clear plan transforms a complex research challenge into manageable stages.
-            </p>
-
-            <div class="phase-points-title"><i class="fa-solid fa-map-location-dot"></i> The research support plan includes:</div>
-            <div class="phase-points-grid">
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Identification and sequencing of key tasks</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Development of a structured workflow</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Selection of appropriate analytical methods</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Definition of concrete project milestones</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Identification of required inputs & datasets</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Planning of interim review and feedback stages</div>
-            </div>
-          </article>
-
-          <!-- Phase 4 -->
-          <article class="phase-card" id="phase-4">
-            <div class="phase-header">
-              <div class="phase-title-group">
-                <div class="phase-num">04</div>
-                <div>
-                  <h3 class="phase-title">Phase 4: Expert Support & Development</h3>
-                  <span class="phase-subtitle">Moving from Plan to Concrete Progress</span>
-                </div>
-              </div>
-            </div>
-
-            <p class="phase-desc">
-              Based on the nature of your project, relevant academic, technical, analytical, or editorial support is provided. Throughout this phase, our focus remains on maintaining clarity, methodological rigor, and continuous alignment with the agreed research goals.
-            </p>
-
-            <div class="phase-points-title"><i class="fa-solid fa-laptop-code"></i> Depending on agreed scope, this stage involves:</div>
-            <div class="phase-points-grid">
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Research proposal or synopsis support</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Literature review organization & synthesis</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Methodology framework development</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Technical research implementation & coding</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Data analysis and statistical support (SPSS/Python/R)</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Model or conceptual framework development</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Thesis and dissertation chapter structuring</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Research manuscript improvement & formatting</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Academic editing and proofreading</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Target journal publication-readiness support</div>
-            </div>
-          </article>
-
-          <!-- Phase 5 -->
-          <article class="phase-card" id="phase-5">
-            <div class="phase-header">
-              <div class="phase-title-group">
-                <div class="phase-num">05</div>
-                <div>
-                  <h3 class="phase-title">Phase 5: Review & Quality Check</h3>
-                  <span class="phase-subtitle">Refining for Quality, Accuracy & Consistency</span>
-                </div>
-              </div>
-            </div>
-
-            <p class="phase-desc">
-              Before completing each stage, the work is reviewed against stringent academic standards. Quality is not just about completing a task—it is about ensuring that the research output is methodologically sound, clearly structured, and aligned with its intended scholarly purpose.
-            </p>
-
-            <div class="phase-points-title"><i class="fa-solid fa-circle-check"></i> The quality review strictly evaluates:</div>
-            <div class="phase-points-grid">
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Direct alignment with research objectives</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Logical flow and structural consistency</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Methodological clarity and replicability</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Technical accuracy of algorithms and equations</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Analytical interpretation of statistical results</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Academic language, syntax, and presentation</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Institutional formatting guidelines adherence</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Citation and reference list consistency checks</div>
-            </div>
-          </article>
-
-          <!-- Phase 6 -->
-          <article class="phase-card" id="phase-6">
-            <div class="phase-header">
-              <div class="phase-title-group">
-                <div class="phase-num">06</div>
-                <div>
-                  <h3 class="phase-title">Phase 6: Feedback & Refinement</h3>
-                  <span class="phase-subtitle">Improving Through Collaboration</span>
-                </div>
-              </div>
-            </div>
-
-            <p class="phase-desc">
-              Research often evolves through discussion, feedback, and refinement. Based on the agreed scope of support, feedback is incorporated to enhance clarity, structure, and overall presentation. Our objective is to support a constructive refinement process while keeping within timeline milestones.
-            </p>
-
-            <div class="phase-points-title"><i class="fa-solid fa-comments"></i> This stage may include:</div>
-            <div class="phase-points-grid">
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Addressing supervisor or doctoral committee feedback</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Clarifying research-related methodological questions</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Revising agreed sections or narrative flow</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Refining data tables, figures, or analysis</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Improving logical coherence between chapters</div>
-              <div class="phase-point-item"><i class="fa-solid fa-circle-check"></i> Incorporating peer-reviewer or journal editor remarks</div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Pre-Footer Strip -->
-    <section style="background: linear-gradient(135deg, var(--primary-dark), #102644); color: #fff; padding: 75px 0; text-align: center;">
-      <div class="container">
-        <h2 style="font-family: var(--font-heading); font-size: 2.2rem; margin-bottom: 16px;">
-          Experience a Systematic, Transparent Research Journey
-        </h2>
-        <p style="font-size: 1.05rem; color: rgba(255,255,255,0.85); max-width: 650px; margin: 0 auto 30px auto;">
-          Take the first step today. Share your requirement with our team and receive a comprehensive assessment within 24 hours.
-        </p>
-        <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-          <a href="contact.html" class="btn btn-primary" style="padding: 14px 30px;">
-            <i class="fa-solid fa-arrow-right"></i> Share Your Requirement
-          </a>
-          <a href="https://wa.me/919187559443" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 14px 30px;">
-            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ==========================================================================
-       COMMON FOOTER
-       ========================================================================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-col footer-brand">
-          <a href="index.html" class="brand-logo" style="margin-bottom: 14px;">
-            <div class="brand-icon">P</div>
-            <div class="brand-text">
-              <span class="brand-name">Proofix<span>.</span></span>
-              <span class="brand-subtext">Technologies</span>
-            </div>
-          </a>
-          <p class="footer-tagline">
-            Proofix Technologies Pvt Ltd empowers scholars, researchers, and faculty members through structured, professional, and ethical academic research support.
-          </p>
-          <div class="footer-socials">
-            <a href="https://wa.me/919187559443" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="mailto:proofix.tech@gmail.com" class="social-btn" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
-            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" class="social-btn" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Quick Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
-            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us - Why Proofix</a></li>
-            <li><a href="process.html"><i class="fa-solid fa-angle-right"></i> Our 6-Phase Process</a></li>
-            <li><a href="blogs.html"><i class="fa-solid fa-angle-right"></i> Academic Blogs</a></li>
-            <li><a href="faq.html"><i class="fa-solid fa-angle-right"></i> FAQ</a></li>
-            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Core Services</h4>
-          <ul class="footer-links">
-            <li><a href="services.html#service-proposal"><i class="fa-solid fa-angle-right"></i> Proposal & Synopsis</a></li>
-            <li><a href="services.html#service-literature"><i class="fa-solid fa-angle-right"></i> Literature Review</a></li>
-            <li><a href="services.html#service-methodology"><i class="fa-solid fa-angle-right"></i> Research Methodology</a></li>
-            <li><a href="services.html#service-analysis"><i class="fa-solid fa-angle-right"></i> Statistical Analysis</a></li>
-            <li><a href="services.html#service-thesis"><i class="fa-solid fa-angle-right"></i> Thesis & Dissertation</a></li>
-            <li><a href="services.html#service-publication"><i class="fa-solid fa-angle-right"></i> Journal Publication</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Get in Touch</h4>
-          <div class="footer-contact-info">
-            <div class="contact-info-item">
-              <i class="fa-solid fa-envelope"></i>
-              <div>
-                <strong>Email Us:</strong><br>
-                <a href="mailto:proofix.tech@gmail.com" style="color: rgba(255,255,255,0.85);">proofix.tech@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <i class="fa-solid fa-phone"></i>
-              <div>
-                <strong>Call / WhatsApp:</strong><br>
-                <a href="tel:+919187559443" style="color: rgba(255,255,255,0.85);">+91 91875 59443</a>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <i class="fa-solid fa-clock"></i>
-              <div>
-                <strong>Working Hours:</strong><br>
-                Mon - Sat: 9:30 AM - 6:30 PM IST
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>&copy; 2026 Proofix Technologies Pvt Ltd. All rights reserved.</div>
-        <div class="footer-legal-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Academic Support</a>
-          <a href="#">Ethical Research Guidelines</a>
-        </div>
-      </div>
+      <div><h4>Quick Links</h4><ul>
+        <li><a href="about.html">About Us</a></li><li><a href="research-domains.html">Research Domains</a></li><li><a href="process.html">Our Process</a></li>
+        <li><a href="blogs.html">Blogs</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="service-detail.html?s=proposal">Research Proposal & Synopsis Support</a></li><li><a href="service-detail.html?s=literature">Literature Review Support</a></li><li><a href="service-detail.html?s=methodology">Research Methodology Support</a></li><li><a href="service-detail.html?s=analysis">Data Analysis & Statistical Support</a></li><li><a href="service-detail.html?s=thesis">Thesis & Dissertation Support</a></li><li><a href="service-detail.html?s=manuscript">Research Paper & Manuscript Support</a></li><li><a href="service-detail.html?s=publication">Publication Support</a></li><li><a href="service-detail.html?s=editing">Academic Editing & Proofreading</a></li></ul></div>
+      <div><h4>Get in Touch</h4><ul class="footer-contact">
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto:proofix.tech@gmail.com">proofix.tech@gmail.com</a></li>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+919187559443">+91 91875 59443</a></li>
+        <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/919187559443" target="_blank" rel="noopener">Chat on WhatsApp</a></li></ul></div>
     </div>
-  </footer>
-
-  <!-- WhatsApp Floating Trigger -->
-  <a href="https://wa.me/919187559443?text=Hi%20Proofix%2C%20I%20am%20looking%20for%20academic%20research%20assistance." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
-    <i class="fa-solid fa-chevron-up"></i>
-  </button>
-
-  <!-- Scripts -->
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/process.js"></script>
+    <div class="footer-bottom"><span>&copy; 2026 Proofix Technologies Pvt Ltd. All rights reserved.</span><span>Empowering Research. Enabling Excellence.</span></div>
+  </div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/919187559443?text=Hi%20Proofix" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

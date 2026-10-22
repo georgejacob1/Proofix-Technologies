@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Proofix Technologies — Service detail page
+   ========================================================================== */
+
+.detail-layout { display: grid; grid-template-columns: 1fr 340px; gap: 48px; align-items: start; }
+.detail-main h2 { font-size: 1.6rem; margin-top: 12px; }
+.side-card { position: sticky; top: calc(var(--header-h) + 24px); display: grid; gap: 20px; }
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 40px; }
+.pager a { border: 1px solid var(--line); border-radius: var(--r-md); padding: 16px 20px; color: var(--ink); font-weight: 700; display: block; }
+.pager a small { display: block; color: var(--ink-mute); font-weight: 500; }
+.pager a:hover { border-color: var(--primary); }
+.pager .next { text-align: right; }
+
+@media (max-width: 1100px) {
+  .detail-layout { grid-template-columns: 1fr; }
+  .side-card { position: static; }
+}
+@media (max-width: 640px) { .pager { grid-template-columns: minmax(0, 1fr); } }

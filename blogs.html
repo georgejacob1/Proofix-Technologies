@@ -3,472 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academic Blogs & Insights | Proofix Technologies</title>
-  <meta name="description" content="Academic research insights from Proofix: What makes a research proposal impressive, how to make a journal paper impactful, and peer-review survival guides.">
-  
-  <!-- Font Awesome Icons -->
+  <title>Blogs | Proofix Technologies</title>
+  <meta name="description" content="Insights on research proposals, impactful journal papers and academic publishing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Common & Page Styles -->
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/blogs.css">
 </head>
 <body>
-
-  <!-- ==========================================================================
-       COMMON HEADER
-       ========================================================================== -->
-  <header class="site-header" id="siteHeader">
-    <div class="container header-container">
-      <a href="index.html" class="brand-logo" aria-label="Proofix Technologies Home">
-        <div class="brand-icon">P</div>
-        <div class="brand-text">
-          <span class="brand-name">Proofix<span>.</span></span>
-          <span class="brand-subtext">Technologies</span>
-        </div>
-      </a>
-
-      <!-- Desktop & Mobile Nav Menu -->
-      <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About Us - Why Proofix</a>
-        
-        <!-- Services Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="services.html" class="nav-link">
-            Services <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem;"></i>
-          </a>
-          <div class="nav-dropdown">
-            <a href="services.html#service-proposal" class="dropdown-link">
-              <i class="fa-solid fa-file-signature"></i> Research Proposal & Synopsis
-            </a>
-            <a href="services.html#service-literature" class="dropdown-link">
-              <i class="fa-solid fa-book-open-reader"></i> Literature Review Support
-            </a>
-            <a href="services.html#service-methodology" class="dropdown-link">
-              <i class="fa-solid fa-compass-drafting"></i> Research Methodology
-            </a>
-            <a href="services.html#service-analysis" class="dropdown-link">
-              <i class="fa-solid fa-chart-pie"></i> Data Analysis & Statistics
-            </a>
-            <a href="services.html#service-thesis" class="dropdown-link">
-              <i class="fa-solid fa-graduation-cap"></i> Thesis & Dissertation
-            </a>
-            <a href="services.html#service-manuscript" class="dropdown-link">
-              <i class="fa-solid fa-newspaper"></i> Paper & Manuscript Support
-            </a>
-            <a href="services.html#service-publication" class="dropdown-link">
-              <i class="fa-solid fa-upload"></i> Publication Support
-            </a>
-            <a href="services.html#service-editing" class="dropdown-link">
-              <i class="fa-solid fa-spell-check"></i> Academic Editing & Proofreading
-            </a>
-          </div>
-        </div>
-
-        <!-- Research Domains Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="research-domains.html" class="nav-link">
-            Research Domains <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem;"></i>
-          </a>
-          <div class="nav-dropdown">
-            <a href="research-domains.html#domain-engineering" class="dropdown-link">
-              <i class="fa-solid fa-microchip"></i> Engineering & Technology
-            </a>
-            <a href="research-domains.html#domain-cs-it" class="dropdown-link">
-              <i class="fa-solid fa-network-wired"></i> Computer Science & IT
-            </a>
-            <a href="research-domains.html#domain-ai-ml" class="dropdown-link">
-              <i class="fa-solid fa-brain"></i> Artificial Intelligence & ML
-            </a>
-            <a href="research-domains.html#domain-datascience" class="dropdown-link">
-              <i class="fa-solid fa-chart-line"></i> Data Science & Analytics
-            </a>
-            <a href="research-domains.html#domain-management" class="dropdown-link">
-              <i class="fa-solid fa-briefcase"></i> Management & Business
-            </a>
-            <a href="research-domains.html#domain-healthcare" class="dropdown-link">
-              <i class="fa-solid fa-heart-pulse"></i> Healthcare & Medical
-            </a>
-          </div>
-        </div>
-
-        <a href="process.html" class="nav-link">Our Process</a>
-        <a href="blogs.html" class="nav-link active">Blogs</a>
-        <a href="faq.html" class="nav-link">FAQ</a>
-        <a href="contact.html" class="nav-link">Contact Us</a>
-      </nav>
-
-      <div class="header-actions">
-        <a href="contact.html" class="btn btn-primary header-btn">
-          <span>Book Consultation</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Proofix Technologies home"><img src="assets/images/logo.png" alt="Proofix Technologies" width="105" height="46"></a>
+    <nav class="nav" id="nav" aria-label="Main">
+        <button class="nav-close" id="navClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <div class="has-menu"><button class="nav-link" aria-haspopup="true">Services <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="menu"><a href="services.html">All Services</a><a href="service-detail.html?s=proposal">Research Proposal & Synopsis Support</a><a href="service-detail.html?s=literature">Literature Review Support</a><a href="service-detail.html?s=methodology">Research Methodology Support</a><a href="service-detail.html?s=analysis">Data Analysis & Statistical Support</a><a href="service-detail.html?s=thesis">Thesis & Dissertation Support</a><a href="service-detail.html?s=manuscript">Research Paper & Manuscript Support</a><a href="service-detail.html?s=publication">Publication Support</a><a href="service-detail.html?s=editing">Academic Editing & Proofreading</a></div></div>
+        <div class="has-menu"><button class="nav-link" aria-haspopup="true">Research Domains <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="menu"><a href="research-domains.html">All Domains</a><a href="research-domains.html#domain-engineering">Engineering & Technology</a><a href="research-domains.html#domain-cs-it">Computer Science & Information Technology</a><a href="research-domains.html#domain-ai-ml">Artificial Intelligence & Machine Learning</a><a href="research-domains.html#domain-datascience">Data Science & Analytics</a><a href="research-domains.html#domain-management">Management & Business Research</a><a href="research-domains.html#domain-healthcare">Healthcare & Medical Research</a></div></div>
+        <a class="nav-link" href="process.html">Our Process</a>
+        <a class="nav-link active" href="blogs.html">Blogs</a>
+        <a class="nav-link" href="faq.html">FAQ</a>
+        <a class="btn btn-accent nav-cta" href="contact.html">Book Consultation</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-accent header-cta" href="contact.html">Book Consultation</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
-  </header>
-
-  <!-- ==========================================================================
-       PAGE HERO
-       ========================================================================== -->
-  <main>
-    <section class="blogs-hero">
-      <div class="container">
-        <div class="blogs-hero-content">
-          <span class="section-tag" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.18); color: var(--accent-gold);">
-            <i class="fa-solid fa-feather-pointed"></i> Research Insights & Best Practices
-          </span>
-          <h1 class="blogs-hero-title">
-            Scholarly Guidance & <span>Doctoral Insights</span>
-          </h1>
-          <p class="blogs-hero-desc">
-            Expert articles curated by our academic mentors to help PhD scholars and researchers formulate novel ideas, craft impactful manuscripts, and conquer peer review.
-          </p>
-        </div>
+  </div>
+</header>
+<main id="main">
+<section class="page-banner"><div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Blogs</span></nav>
+  <h1>Insights for Researchers</h1><p>Practical guidance on proposals, originality and publication.</p></div></section>
+<section class="section"><div class="container"><div class="grid grid-2" style="max-width:900px;margin:0 auto"><a class="card blog-card" href="blog-detail.html?b=quality-research-proposal"><div class="thumb"><img src="https://picsum.photos/id/20/800/450" alt="" loading="lazy"></div>
+  <div class="body"><div class="meta"><span class="tag">Research Proposal</span><span>3 min read</span></div><h3>How to Write a Quality Research Proposal?</h3><p>Writing a quality research proposal is of utmost importance to start your PhD journey. The emphasis should be on the uniqueness of the research being presented.</p>
+  <span class="link-arrow">Read article <i class="fa-solid fa-arrow-right"></i></span></div></a><a class="card blog-card" href="blog-detail.html?b=impactful-journal-paper"><div class="thumb"><img src="https://picsum.photos/id/24/800/450" alt="" loading="lazy"></div>
+  <div class="body"><div class="meta"><span class="tag">Publication</span><span>2 min read</span></div><h3>How to Make a Journal Paper Impactful?</h3><p>Any research focuses on the novelty in the topic selected and how original your ideas are to the particular research area.</p>
+  <span class="link-arrow">Read article <i class="fa-solid fa-arrow-right"></i></span></div></a></div></div></section>
+<section class="section"><div class="container"><div class="cta-band">
+  <div><h2>Need expert guidance?</h2><p>Our team helps devise unique problem identification and impactful research ideas.</p></div>
+  <div class="actions"><a class="btn btn-accent" href="contact.html">Book Consultation</a>
+  <a class="btn btn-whatsapp" href="https://wa.me/919187559443?text=Hi%20Proofix" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a></div></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Proofix Technologies">
+        <p>Proofix Technologies Pvt Ltd provides professional academic research assistance and technical research support for scholars, researchers, faculty members and academic professionals.</p>
       </div>
-    </section>
-
-    <!-- Search & Filter Controls -->
-    <div class="blog-filter-bar">
-      <div class="container blog-controls">
-        <div class="blog-search-box">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" id="blogSearchInput" class="blog-search-input" placeholder="Search insights by topic, methodology, keywords...">
-        </div>
-
-        <div class="blog-category-pills">
-          <button class="blog-pill active" data-category="all">All Articles</button>
-          <button class="blog-pill" data-category="proposal">Proposal Writing</button>
-          <button class="blog-pill" data-category="journal">Journal Publishing</button>
-          <button class="blog-pill" data-category="methodology">Methodology & Review</button>
-        </div>
-      </div>
+      <div><h4>Quick Links</h4><ul>
+        <li><a href="about.html">About Us</a></li><li><a href="research-domains.html">Research Domains</a></li><li><a href="process.html">Our Process</a></li>
+        <li><a href="blogs.html">Blogs</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="service-detail.html?s=proposal">Research Proposal & Synopsis Support</a></li><li><a href="service-detail.html?s=literature">Literature Review Support</a></li><li><a href="service-detail.html?s=methodology">Research Methodology Support</a></li><li><a href="service-detail.html?s=analysis">Data Analysis & Statistical Support</a></li><li><a href="service-detail.html?s=thesis">Thesis & Dissertation Support</a></li><li><a href="service-detail.html?s=manuscript">Research Paper & Manuscript Support</a></li><li><a href="service-detail.html?s=publication">Publication Support</a></li><li><a href="service-detail.html?s=editing">Academic Editing & Proofreading</a></li></ul></div>
+      <div><h4>Get in Touch</h4><ul class="footer-contact">
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto:proofix.tech@gmail.com">proofix.tech@gmail.com</a></li>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+919187559443">+91 91875 59443</a></li>
+        <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/919187559443" target="_blank" rel="noopener">Chat on WhatsApp</a></li></ul></div>
     </div>
-
-    <!-- ==========================================================================
-         ARTICLES GRID
-         ========================================================================== -->
-    <section class="blogs-section">
-      <div class="container">
-        <div class="blogs-grid">
-
-          <!-- Blog 1: What makes a research proposal Impressive? (From PDF) -->
-          <article class="blog-card cat-proposal">
-            <div class="blog-card-body">
-              <div class="blog-meta-tags">
-                <span class="blog-badge gold">PhD Proposal</span>
-                <span><i class="fa-regular fa-clock"></i> 5 Min Read</span>
-                <span><i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i> Editorial Verified</span>
-              </div>
-
-              <h2 class="blog-title">What Makes a Research Proposal Impressive?</h2>
-              
-              <p class="blog-excerpt">
-                Writing a quality research proposal is of utmost importance to start your PhD journey. In a quality proposal, the emphasis must always be on the uniqueness of the research being presented.
-              </p>
-
-              <div class="blog-key-points">
-                <h5><i class="fa-solid fa-star" style="color: var(--accent-gold);"></i> Core Attributes of an Impressive Proposal:</h5>
-                <ul>
-                  <li><i class="fa-solid fa-circle-check"></i> <strong>Novel Problem Statement:</strong> Rooted in verified gaps in selected domain</li>
-                  <li><i class="fa-solid fa-circle-check"></i> <strong>Focused Novel Title:</strong> Clarifies how you overcome existing bottlenecks</li>
-                  <li><i class="fa-solid fa-circle-check"></i> <strong>Clear Research Aim:</strong> Focuses on concrete solutions to achieve</li>
-                  <li><i class="fa-solid fa-circle-check"></i> <strong>Four Minimum Objectives:</strong> Structured guide to execute your concept</li>
-                  <li><i class="fa-solid fa-circle-check"></i> <strong>Concrete Methodology:</strong> Demonstrates viable academic contribution</li>
-                </ul>
-              </div>
-
-              <div class="blog-card-footer">
-                <div class="blog-author-info">
-                  <div class="blog-author-avatar">SM</div>
-                  <div>
-                    <strong>Dr. Sarah Mitchell</strong><br>
-                    <span>Senior Academic Advisor</span>
-                  </div>
-                </div>
-                <button class="btn btn-outline-dark read-article-btn" style="padding: 8px 18px; font-size: 0.88rem;">
-                  Read Article <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-
-              <!-- Hidden full text for modal -->
-              <div class="full-article-data" style="display: none;">
-                <p>Writing a quality research proposal is utmost important to start with your PhD journey. By quality proposal, the emphasis should be on the uniqueness of the research which is being presented.</p>
-                <p>Various attributes which are to be focused while preparing a research proposal are depicted below:</p>
-                <ol style="margin: 16px 0 16px 20px; line-height: 1.8;">
-                  <li><strong>Start with a novel problem statement</strong> that exists in the selected area of research. Without identifying an authentic research gap, even meticulous studies fail to attract supervisory enthusiasm.</li>
-                  <li><strong>Formulate a novel topic/title</strong> of your research with the focus on how you are going to overcome the identified problem from existing research.</li>
-                  <li><strong>Define a clear aim</strong> of your research which focuses on the solution you expect to achieve through your inquiry.</li>
-                  <li><strong>Formulate a minimum of four research objectives</strong> which shall guide you to accomplish your research concept systematically across subsequent chapters.</li>
-                  <li><strong>A well-defined and novel research methodology</strong> to be framed which makes sure that you have a useful and concrete contribution towards the topic which is selected.</li>
-                </ol>
-                <p>To achieve this, constant self-upgradation on the trends and advancements of each research area is necessary. Our team of experts at Proofix helps in devising unique problem identification, impactful research ideas, and possible findings to make your research a novel one.</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Blog 2: How to make a Journal paper impactful? (From PDF) -->
-          <article class="blog-card cat-journal">
-            <div class="blog-card-body">
-              <div class="blog-meta-tags">
-                <span class="blog-badge">Journal Publishing</span>
-                <span><i class="fa-regular fa-clock"></i> 4 Min Read</span>
-                <span><i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i> Scopus / SCI Focus</span>
-              </div>
-
-              <h2 class="blog-title">How to Make a Journal Paper Impactful?</h2>
-              
-              <p class="blog-excerpt">
-                Any scientific research hinges on the novelty in the topic selected and how original your ideas are to the specific research area. Maintaining originality remains the single largest determinant of citation impact.
-              </p>
-
-              <div class="blog-key-points">
-                <h5><i class="fa-solid fa-bolt" style="color: var(--accent-gold);"></i> Key Pillars of Paper Impact:</h5>
-                <ul>
-                  <li><i class="fa-solid fa-circle-check"></i> <strong>Originality in Topic Selection:</strong> Avoiding incremental rehash of published findings</li>
-                  <li><i class="fa-solid fa-circle-check"></i> <strong>Continuous Trend Upgradation:</strong> Benchmarking against current year literature</li>
-                  <li><i class="fa-solid fa-circle-check"></i> <strong>Rigorous Validation Metrics:</strong> Providing statistical or mathematical proofs</li>
-                  <li><i class="fa-solid fa-circle-check"></i> <strong>Defensive Discussion:</strong> Transparently explaining constraints & future scope</li>
-                </ul>
-              </div>
-
-              <div class="blog-card-footer">
-                <div class="blog-author-info">
-                  <div class="blog-author-avatar">MR</div>
-                  <div>
-                    <strong>Dr. Michael Roberts</strong><br>
-                    <span>Publication & Defense Coach</span>
-                  </div>
-                </div>
-                <button class="btn btn-outline-dark read-article-btn" style="padding: 8px 18px; font-size: 0.88rem;">
-                  Read Article <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-
-              <!-- Hidden full text for modal -->
-              <div class="full-article-data" style="display: none;">
-                <p>Any research focuses on the novelty in the topic selected and how original your ideas are to the particular research area. Maintaining the originality in any selected topic remains to be the major impact of your research.</p>
-                <p>To achieve this, constant self-upgradation on the trends and advancements of each research area is necessary. Journal editors and reviewers immediately reject manuscripts that replicate existing methodologies on trivial dataset variations.</p>
-                <p>Our expert team at Proofix helps in devising unique problem identification, impactful research ideas, and possible findings to make your research a novel one. Furthermore, ensuring that your paper communicates findings with concise academic clarity and flawless graphical representations substantially reduces review turnaround times.</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Blog 3: Systematic Literature Review (Academic Support Guide) -->
-          <article class="blog-card cat-methodology">
-            <div class="blog-card-body">
-              <div class="blog-meta-tags">
-                <span class="blog-badge gold">Methodology</span>
-                <span><i class="fa-regular fa-clock"></i> 6 Min Read</span>
-                <span><i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i> PRISMA Guidelines</span>
-              </div>
-
-              <h2 class="blog-title">Constructing a High-Yield Systematic Literature Review</h2>
-              
-              <p class="blog-excerpt">
-                A literature review is not a summary of existing papers—it is a critical synthesis that proves why your PhD study must exist. Learn how to leverage search matrices and thematic clustering.
-              </p>
-
-              <div class="blog-key-points">
-                <h5><i class="fa-solid fa-book-open" style="color: var(--accent-gold);"></i> Methodological Steps:</h5>
-                <ul>
-                  <li><i class="fa-solid fa-circle-check"></i> Keyword string formulation across Scopus & Web of Science</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Applying strict inclusion & exclusion criteria</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Developing a thematic synthesis matrix rather than author-by-author summaries</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Explicitly deducing research gaps from methodological limitations</li>
-                </ul>
-              </div>
-
-              <div class="blog-card-footer">
-                <div class="blog-author-info">
-                  <div class="blog-author-avatar">JC</div>
-                  <div>
-                    <strong>Dr. James Chen</strong><br>
-                    <span>Literature Specialist</span>
-                  </div>
-                </div>
-                <button class="btn btn-outline-dark read-article-btn" style="padding: 8px 18px; font-size: 0.88rem;">
-                  Read Article <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-
-              <div class="full-article-data" style="display: none;">
-                <p>Too many researchers fall into the trap of writing an author-by-author chronological summary: "Author A said this, Author B said that." Top-tier journals reject this approach outright.</p>
-                <p>A true systematic review organizes literature thematically around variables, contradictions in prior findings, and evolving technological paradigms. By using tools like PRISMA flowcharts and concept-to-author matrices, you establish unassailable justification for your upcoming experiments.</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Blog 4: Peer Review Survival Guide -->
-          <article class="blog-card cat-journal">
-            <div class="blog-card-body">
-              <div class="blog-meta-tags">
-                <span class="blog-badge">Peer Review</span>
-                <span><i class="fa-regular fa-clock"></i> 5 Min Read</span>
-                <span><i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i> Reviewer Response</span>
-              </div>
-
-              <h2 class="blog-title">Surviving Major Revisions: How to Write an Irresistible Rebuttal</h2>
-              
-              <p class="blog-excerpt">
-                Receiving harsh reviewer feedback can be discouraging. Yet, major revisions represent an invitation to publish. Master the etiquette, tone, and formatting of successful rebuttal letters.
-              </p>
-
-              <div class="blog-key-points">
-                <h5><i class="fa-solid fa-shield-halved" style="color: var(--accent-gold);"></i> Essential Rebuttal Principles:</h5>
-                <ul>
-                  <li><i class="fa-solid fa-circle-check"></i> Always thank the reviewers for specific, constructive critiques</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Use a three-column response: Reviewer Comment, Author Response, Page/Line Diffs</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Never argue emotionally; provide empirical citations or supplementary data</li>
-                  <li><i class="fa-solid fa-circle-check"></i> Highlight all manuscript edits in distinct colors or tracked changes</li>
-                </ul>
-              </div>
-
-              <div class="blog-card-footer">
-                <div class="blog-author-info">
-                  <div class="blog-author-avatar">PS</div>
-                  <div>
-                    <strong>Dr. Priya Sharma</strong><br>
-                    <span>Analytics & Publication Advisor</span>
-                  </div>
-                </div>
-                <button class="btn btn-outline-dark read-article-btn" style="padding: 8px 18px; font-size: 0.88rem;">
-                  Read Article <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-
-              <div class="full-article-data" style="display: none;">
-                <p>A response letter is just as important as the revised manuscript itself. Reviewers rarely re-read the entire paper from scratch; they rely heavily on your response document to verify whether their concerns were respected and resolved.</p>
-                <p>By adopting a polite, evidence-grounded structure, you turn skeptical reviewers into advocates for your final publication approval.</p>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Reading Modal Window -->
-    <div class="modal-overlay" id="articleModal">
-      <div class="modal-content-box">
-        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Article"><i class="fa-solid fa-xmark"></i></button>
-        <span id="modalArticleCategory" class="blog-badge" style="margin-bottom: 14px; display: inline-block;">Category</span>
-        <h2 id="modalArticleTitle" style="font-family: var(--font-heading); font-size: 2.1rem; color: var(--primary-dark); margin-bottom: 20px; line-height: 1.3;">Article Title</h2>
-        <div id="modalArticleBody" style="font-size: 1.02rem; line-height: 1.75; color: var(--text-main);">
-          <!-- Injected via jQuery -->
-        </div>
-        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-          <span style="font-size: 0.9rem; color: var(--text-muted);"><i class="fa-solid fa-shield-halved" style="color: var(--accent-gold);"></i> Proofix Academic Research Board</span>
-          <a href="contact.html" class="btn btn-primary" style="padding: 9px 20px;">Consult on This Topic</a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!-- ==========================================================================
-       COMMON FOOTER
-       ========================================================================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-col footer-brand">
-          <a href="index.html" class="brand-logo" style="margin-bottom: 14px;">
-            <div class="brand-icon">P</div>
-            <div class="brand-text">
-              <span class="brand-name">Proofix<span>.</span></span>
-              <span class="brand-subtext">Technologies</span>
-            </div>
-          </a>
-          <p class="footer-tagline">
-            Proofix Technologies Pvt Ltd empowers scholars, researchers, and faculty members through structured, professional, and ethical academic research support.
-          </p>
-          <div class="footer-socials">
-            <a href="https://wa.me/919187559443" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="mailto:proofix.tech@gmail.com" class="social-btn" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
-            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" class="social-btn" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Quick Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
-            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us - Why Proofix</a></li>
-            <li><a href="process.html"><i class="fa-solid fa-angle-right"></i> Our 6-Phase Process</a></li>
-            <li><a href="blogs.html"><i class="fa-solid fa-angle-right"></i> Academic Blogs</a></li>
-            <li><a href="faq.html"><i class="fa-solid fa-angle-right"></i> FAQ</a></li>
-            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Core Services</h4>
-          <ul class="footer-links">
-            <li><a href="services.html#service-proposal"><i class="fa-solid fa-angle-right"></i> Proposal & Synopsis</a></li>
-            <li><a href="services.html#service-literature"><i class="fa-solid fa-angle-right"></i> Literature Review</a></li>
-            <li><a href="services.html#service-methodology"><i class="fa-solid fa-angle-right"></i> Research Methodology</a></li>
-            <li><a href="services.html#service-analysis"><i class="fa-solid fa-angle-right"></i> Statistical Analysis</a></li>
-            <li><a href="services.html#service-thesis"><i class="fa-solid fa-angle-right"></i> Thesis & Dissertation</a></li>
-            <li><a href="services.html#service-publication"><i class="fa-solid fa-angle-right"></i> Journal Publication</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Get in Touch</h4>
-          <div class="footer-contact-info">
-            <div class="contact-info-item">
-              <i class="fa-solid fa-envelope"></i>
-              <div>
-                <strong>Email Us:</strong><br>
-                <a href="mailto:proofix.tech@gmail.com" style="color: rgba(255,255,255,0.85);">proofix.tech@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <i class="fa-solid fa-phone"></i>
-              <div>
-                <strong>Call / WhatsApp:</strong><br>
-                <a href="tel:+919187559443" style="color: rgba(255,255,255,0.85);">+91 91875 59443</a>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <i class="fa-solid fa-clock"></i>
-              <div>
-                <strong>Working Hours:</strong><br>
-                Mon - Sat: 9:30 AM - 6:30 PM IST
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>&copy; 2026 Proofix Technologies Pvt Ltd. All rights reserved.</div>
-        <div class="footer-legal-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Academic Support</a>
-          <a href="#">Ethical Research Guidelines</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- WhatsApp Floating Trigger -->
-  <a href="https://wa.me/919187559443?text=Hi%20Proofix%2C%20I%20am%20looking%20for%20academic%20research%20assistance." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
-    <i class="fa-solid fa-chevron-up"></i>
-  </button>
-
-  <!-- Scripts -->
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/blogs.js"></script>
+    <div class="footer-bottom"><span>&copy; 2026 Proofix Technologies Pvt Ltd. All rights reserved.</span><span>Empowering Research. Enabling Excellence.</span></div>
+  </div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/919187559443?text=Hi%20Proofix" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
