@@ -3,615 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Proofix Technologies - Why Proofix</title>
-  <meta name="description" content="Learn about Proofix Technologies Pvt Ltd - our philosophy, mission, vision, expert advisory board, and commitment to refined academic research support.">
-  
-  <!-- Font Awesome Icons -->
+  <title>About Us | Proofix Technologies</title>
+  <meta name="description" content="Proofix Technologies provides professional academic research assistance and technical research support for scholars and researchers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Owl Carousel Styles -->
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-  <!-- Common & Page Styles -->
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
-
-  <!-- ==========================================================================
-       COMMON HEADER
-       ========================================================================== -->
-  <header class="site-header" id="siteHeader">
-    <div class="container header-container">
-      <a href="index.html" class="brand-logo" aria-label="Proofix Technologies Home">
-        <div class="brand-icon">P</div>
-        <div class="brand-text">
-          <span class="brand-name">Proofix<span>.</span></span>
-          <span class="brand-subtext">Technologies</span>
-        </div>
-      </a>
-
-      <!-- Desktop & Mobile Nav Menu -->
-      <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link active">About Us</a>
-        
-        <!-- Services Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="services.html" class="nav-link">
-            Services <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem;"></i>
-          </a>
-          <div class="nav-dropdown">
-            <a href="services.html#service-proposal" class="dropdown-link">
-              <i class="fa-solid fa-file-signature"></i> Research Proposal & Synopsis
-            </a>
-            <a href="services.html#service-literature" class="dropdown-link">
-              <i class="fa-solid fa-book-open-reader"></i> Literature Review Support
-            </a>
-            <a href="services.html#service-methodology" class="dropdown-link">
-              <i class="fa-solid fa-compass-drafting"></i> Research Methodology
-            </a>
-            <a href="services.html#service-analysis" class="dropdown-link">
-              <i class="fa-solid fa-chart-pie"></i> Data Analysis & Statistics
-            </a>
-            <a href="services.html#service-thesis" class="dropdown-link">
-              <i class="fa-solid fa-graduation-cap"></i> Thesis & Dissertation
-            </a>
-            <a href="services.html#service-manuscript" class="dropdown-link">
-              <i class="fa-solid fa-newspaper"></i> Paper & Manuscript Support
-            </a>
-            <a href="services.html#service-publication" class="dropdown-link">
-              <i class="fa-solid fa-upload"></i> Publication Support
-            </a>
-            <a href="services.html#service-editing" class="dropdown-link">
-              <i class="fa-solid fa-spell-check"></i> Academic Editing & Proofreading
-            </a>
-          </div>
-        </div>
-
-        <!-- Research Domains Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="research-domains.html" class="nav-link">
-            Research Domains <i class="fa-solid fa-chevron-down" style="font-size: 0.72rem;"></i>
-          </a>
-          <div class="nav-dropdown">
-            <a href="research-domains.html#domain-engineering" class="dropdown-link">
-              <i class="fa-solid fa-microchip"></i> Engineering & Technology
-            </a>
-            <a href="research-domains.html#domain-cs-it" class="dropdown-link">
-              <i class="fa-solid fa-network-wired"></i> Computer Science & IT
-            </a>
-            <a href="research-domains.html#domain-ai-ml" class="dropdown-link">
-              <i class="fa-solid fa-brain"></i> Artificial Intelligence & ML
-            </a>
-            <a href="research-domains.html#domain-datascience" class="dropdown-link">
-              <i class="fa-solid fa-chart-line"></i> Data Science & Analytics
-            </a>
-            <a href="research-domains.html#domain-management" class="dropdown-link">
-              <i class="fa-solid fa-briefcase"></i> Management & Business
-            </a>
-            <a href="research-domains.html#domain-healthcare" class="dropdown-link">
-              <i class="fa-solid fa-heart-pulse"></i> Healthcare & Medical
-            </a>
-          </div>
-        </div>
-
-        <a href="process.html" class="nav-link">Our Process</a>
-        <a href="contact.html" class="nav-link">Contact Us</a>
-      </nav>
-
-      <div class="header-actions">
-        <a href="contact.html" class="btn btn-primary header-btn">
-          <span>Book Consultation</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Proofix Technologies home"><img src="assets/images/logo.png" alt="Proofix Technologies" width="105" height="46"></a>
+    <nav class="nav" id="nav" aria-label="Main">
+        <button class="nav-close" id="navClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="about.html">About Us</a>
+        <div class="has-menu"><button class="nav-link" aria-haspopup="true">Services <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="menu"><a href="services.html">All Services</a><a href="service-detail.html?s=proposal">Research Proposal & Synopsis Support</a><a href="service-detail.html?s=literature">Literature Review Support</a><a href="service-detail.html?s=methodology">Research Methodology Support</a><a href="service-detail.html?s=analysis">Data Analysis & Statistical Support</a><a href="service-detail.html?s=thesis">Thesis & Dissertation Support</a><a href="service-detail.html?s=manuscript">Research Paper & Manuscript Support</a><a href="service-detail.html?s=publication">Publication Support</a><a href="service-detail.html?s=editing">Academic Editing & Proofreading</a></div></div>
+        <div class="has-menu"><button class="nav-link" aria-haspopup="true">Research Domains <i class="fa-solid fa-chevron-down"></i></button>
+          <div class="menu"><a href="research-domains.html">All Domains</a><a href="research-domains.html#domain-engineering">Engineering & Technology</a><a href="research-domains.html#domain-cs-it">Computer Science & Information Technology</a><a href="research-domains.html#domain-ai-ml">Artificial Intelligence & Machine Learning</a><a href="research-domains.html#domain-datascience">Data Science & Analytics</a><a href="research-domains.html#domain-management">Management & Business Research</a><a href="research-domains.html#domain-healthcare">Healthcare & Medical Research</a></div></div>
+        <a class="nav-link" href="process.html">Our Process</a>
+        <a class="nav-link" href="blogs.html">Blogs</a>
+        <a class="nav-link" href="faq.html">FAQ</a>
+        <a class="btn btn-accent nav-cta" href="contact.html">Book Consultation</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-accent header-cta" href="contact.html">Book Consultation</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
-  </header>
-
-  <!-- ==========================================================================
-       ABOUT HERO BANNER (With Owl Carousel Background Slider)
-       ========================================================================== -->
-  <main>
-    <section class="about-hero hero-slider-section">
-
-      <!-- Owl Carousel Background Slides -->
-      <div class="hero-banner-carousel owl-carousel owl-theme">
-        <div class="hero-slide" style="background-image: url('assets/images/banner.png');"></div>
-        <div class="hero-slide" style="background-image: url('assets/images/banner2.jpg');"></div>
-        <div class="hero-slide" style="background-image: url('assets/images/banner3.jpg');"></div>
+  </div>
+</header>
+<main id="main">
+<section class="page-banner"><div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>About Us</span></nav>
+  <h1>Research is remembered for its Impact, Not its Length.</h1><p>Structured, professional and ethical research support tailored to individual research requirements.</p></div></section>
+<section class="section"><div class="container split">
+  <div><span class="eyebrow">Who we are</span><h2>Academic knowledge meets technical expertise</h2>
+  <p>Proofix Technologies Pvt Ltd is focused on providing professional academic research assistance and technical research support for scholars and researchers facing complex research challenges.</p>
+  <p>We understand that modern research often requires a combination of academic knowledge, technical skills, data analysis capabilities, methodological understanding, and effective scientific communication.</p>
+  <p>Our approach brings these areas together to provide structured support tailored to individual research requirements.</p></div>
+  <img src="https://picsum.photos/id/3/900/675" alt="Research discussion" loading="lazy">
+</div></section>
+<section class="section soft"><div class="container">
+  <div class="quote" style="max-width:900px;margin:0 auto 56px;text-align:center">Raw ideas are common, Refined Research is rare<small>Our Philosophy</small></div>
+  <p class="lead" style="max-width:760px;margin:0 auto 48px;text-align:center">We believe effective research support should help researchers gain greater clarity about their work, make informed decisions, and communicate their research more effectively.</p>
+  <div class="grid grid-2">
+    <div class="card vm-card"><h3><i class="fa-solid fa-eye"></i> Our Vision</h3><p style="margin:0">To become a trusted research support organization that empowers scholars and researchers through responsible, innovative, and quality-focused academic and technical assistance.</p></div>
+    <div class="card vm-card"><h3><i class="fa-solid fa-bullseye"></i> Our Mission</h3><p>To provide structured and professional research support that helps researchers:</p>
+    <ul class="check-list"><li>Develop stronger research ideas</li><li>Improve research methodology</li><li>Handle complex technical and analytical challenges</li><li>Strengthen academic communication</li><li>Prepare research work for review and publication</li><li>Build confidence throughout their research journey</li></ul></div>
+  </div>
+</div></section>
+<section class="section"><div class="container"><div class="cta-band">
+  <div><h2>Let's refine your research together</h2><p>Tell us where you are in your research journey and we will help you take the next step.</p></div>
+  <div class="actions"><a class="btn btn-accent" href="contact.html">Book Consultation</a>
+  <a class="btn btn-whatsapp" href="https://wa.me/919187559443?text=Hi%20Proofix" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a></div></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Proofix Technologies">
+        <p>Proofix Technologies Pvt Ltd provides professional academic research assistance and technical research support for scholars, researchers, faculty members and academic professionals.</p>
       </div>
-
-      <!-- Dark overlay for readability -->
-      <div class="hero-overlay"></div>
-
-      <!-- Hero Content -->
-      <div class="container hero-slider-container">
-        <div class="about-hero-grid">
-          <div>
-            <span class="section-tag" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.18); color: var(--accent-gold);">
-              <i class="fa-solid fa-building-columns"></i> About Proofix Technologies
-            </span>
-            <h1 class="about-hero-title">
-              Research is Remembered for its <span>Impact</span>, Not its Length.
-            </h1>
-            <p class="about-hero-desc">
-              Proofix Technologies Pvt Ltd is dedicated to providing professional academic research assistance and technical support for scholars and researchers facing complex research challenges.
-            </p>
-            <p style="color: rgba(255, 255, 255, 0.75); font-size: 0.96rem; line-height: 1.65; margin-bottom: 24px;">
-              We understand that modern research demands a synthesis of deep academic knowledge, technical acumen, data analysis capability, methodological rigor, and lucid scientific communication.
-            </p>
-            <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-              <a href="contact.html" class="btn btn-primary">Schedule Consultation</a>
-              <a href="process.html" class="btn btn-secondary">Explore Our Process</a>
-            </div>
-          </div>
-
-          <!-- Philosophy Card -->
-          <div class="philosophy-card">
-            <span class="philosophy-tag">
-              <i class="fa-solid fa-gem"></i> Guiding Philosophy
-            </span>
-            <h3 class="philosophy-quote">
-              “Raw ideas are common, Refined Research is rare.”
-            </h3>
-            <p class="philosophy-desc">
-              We believe effective research support should help researchers gain greater clarity about their inquiry, make well-informed analytical decisions, and communicate their discoveries with undeniable impact.
-            </p>
-            <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 12px;">
-              <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--accent-gold); color: #0b1a2f; display: flex; align-items: center; justify-content: center; font-weight: 800;">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <span style="font-size: 0.88rem; color: #FFFFFF; font-weight: 600;">Tailored Structured Support</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         VISION, MISSION & 4 PILLARS
-         ========================================================================== -->
-    <section class="mission-vision-section">
-      <div class="container">
-        <div class="mv-grid">
-          <!-- Vision -->
-          <div class="mv-card">
-            <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
-            <h2 class="mv-title">Our Vision</h2>
-            <p class="mv-text">
-              To become a globally trusted research support organization that empowers scholars, researchers, and academic faculty members through responsible, innovative, and quality-focused academic and technical assistance.
-            </p>
-            <div style="margin-top: auto; padding: 16px; background: var(--bg-alt); border-radius: var(--radius-sm); font-size: 0.88rem; color: var(--text-muted);">
-              <i class="fa-solid fa-shield-halved" style="color: var(--accent-blue);"></i> Ensuring compliance with global academic ethics & institutional publishing standards.
-            </div>
-          </div>
-
-          <!-- Mission -->
-          <div class="mv-card">
-            <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
-            <h2 class="mv-title">Our Mission</h2>
-            <p class="mv-text">
-              To deliver structured and professional research support that empowers researchers at every phase of their academic journey:
-            </p>
-            <div class="mission-list">
-              <div class="mission-item"><i class="fa-solid fa-circle-check"></i> Develop stronger, novel research ideas</div>
-              <div class="mission-item"><i class="fa-solid fa-circle-check"></i> Improve research design and methodological rigor</div>
-              <div class="mission-item"><i class="fa-solid fa-circle-check"></i> Handle complex technical and analytical challenges</div>
-              <div class="mission-item"><i class="fa-solid fa-circle-check"></i> Strengthen clarity in academic communication</div>
-              <div class="mission-item"><i class="fa-solid fa-circle-check"></i> Prepare research work for peer review & indexed publication</div>
-              <div class="mission-item"><i class="fa-solid fa-circle-check"></i> Build lasting confidence throughout their research journey</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4 Core Pillars -->
-        <div class="section-header" style="margin-bottom: 35px;">
-          <h2 class="section-title" style="font-size: 2rem;">The Four Pillars of Proofix Support</h2>
-          <p class="section-subtitle">The foundational principles that guide every consultation and review we conduct.</p>
-        </div>
-
-        <div class="pillars-grid">
-          <div class="pillar-card">
-            <div class="pillar-icon"><i class="fa-solid fa-award"></i></div>
-            <h3 class="pillar-title">Deep Expertise</h3>
-            <p class="pillar-desc">Decades of combined technical and academic experience in doctoral admissions, methodology, and indexed journal publishing.</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
-            <h3 class="pillar-title">Personalized Mentorship</h3>
-            <p class="pillar-desc">Customized guidance that recognizes both the intellectual complexity and the academic discipline of doctoral milestones.</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-            <h3 class="pillar-title">Transformation</h3>
-            <p class="pillar-desc">We do not just help format documents—we help refine the thinking, data structures, and scientific merit behind them.</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-            <h3 class="pillar-title">Academic Integrity</h3>
-            <p class="pillar-desc">Honest, transparent guidance and strict adherence to anti-plagiarism and institutional publication ethics.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         FOUNDER STORY
-         ========================================================================== -->
-    <section class="founder-section">
-      <div class="container">
-        <div class="founder-card">
-          <div class="founder-image-box">
-            <div class="founder-avatar-placeholder">
-              <i class="fa-solid fa-user-tie"></i>
-            </div>
-            <h4 class="founder-name">Dr. Rajesh Kumar</h4>
-            <span class="founder-role">Founder & Chief Academic Advisor</span>
-            <p style="font-size: 0.84rem; color: rgba(255,255,255,0.7); margin-top: 10px;">
-              PhD in Computer Science & Applied Informatics<br>Former Advisory Board Member
-            </p>
-          </div>
-
-          <div class="founder-bio">
-            <span class="section-tag blue">Leadership Perspective</span>
-            <h3>The Story Behind Proofix Technologies</h3>
-            <p>
-              “My journey into founding Proofix began when I completed my doctoral studies. The path was challenging, filled with uncertainty, and I often wished for a mentor who truly understood the complexities of the doctoral journey—not just academically, but methodologically.”
-            </p>
-            <p>
-              “After spending years evaluating research papers and advising scholars across disciplines, I witnessed countless brilliant minds struggle with translating their ideas into structured academic papers. In 2015, Proofix was founded with a simple mission: to be the guide I wished I had during my own doctoral pursuit.”
-            </p>
-            <p>
-              “Today, our multidisciplinary team brings together domain experts from Engineering, AI, Business, and Health Sciences to assist researchers worldwide with uncompromising academic standards.”
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         OUR JOURNEY / MILESTONES
-         ========================================================================== -->
-    <section class="timeline-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fa-solid fa-timeline"></i> Evolution & Growth</span>
-          <h2 class="section-title">Our Journey of Excellence</h2>
-          <p class="section-subtitle">How Proofix evolved into a trusted research support organization for scholars globally.</p>
-        </div>
-
-        <div class="timeline-wrap">
-          <div class="timeline-item">
-            <div class="timeline-badge"><i class="fa-solid fa-rocket"></i></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2015</span>
-              <h4 class="timeline-title">Foundation & Vision</h4>
-              <p class="timeline-desc">Proofix was established with a focus on democratizing access to expert PhD research guidance, starting with an initial cohort of 12 doctoral candidates.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-badge"><i class="fa-solid fa-globe"></i></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2017</span>
-              <h4 class="timeline-title">Multidisciplinary Expansion</h4>
-              <p class="timeline-desc">Expanded our mentor network to include advisors across Engineering, AI, and Social Sciences. Launched our comprehensive research proposal mentorship program.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-badge"><i class="fa-solid fa-trophy"></i></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2019</span>
-              <h4 class="timeline-title">Peer Recognition & Quality Standard</h4>
-              <p class="timeline-desc">Achieved a 95% proposal approval rate across partner university candidates. Recognized by academic mentoring forums for ethical and structured guidance.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-badge"><i class="fa-solid fa-laptop-code"></i></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2021</span>
-              <h4 class="timeline-title">Digital Innovation & Global Consulting</h4>
-              <p class="timeline-desc">Launched specialized technical support for Machine Learning, Big Data analytics, and virtual consultation suites for international scholars.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-badge"><i class="fa-solid fa-star"></i></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2023</span>
-              <h4 class="timeline-title">500+ Milestone Achievement</h4>
-              <p class="timeline-desc">Celebrated mentoring our 500th doctoral scholar to proposal defense and indexed journal acceptance (Scopus/SCI).</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-badge"><i class="fa-solid fa-certificate"></i></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2026</span>
-              <h4 class="timeline-title">Continued Excellence & Global Impact</h4>
-              <p class="timeline-desc">Now guiding researchers across 45+ universities globally with an industry-leading 98% client satisfaction rate.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         MEET OUR EXPERT TEAM
-         ========================================================================== -->
-    <section class="team-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag blue"><i class="fa-solid fa-users-gear"></i> Academic Advisory Council</span>
-          <h2 class="section-title">Meet Our Domain Specialists</h2>
-          <p class="section-subtitle">Our team of experienced PhD advisors brings decades of combined expertise across multiple scientific fields.</p>
-        </div>
-
-        <div class="team-grid">
-          <!-- Member 1 -->
-          <div class="team-card">
-            <div class="team-avatar-box">SM</div>
-            <h4 class="team-name">Dr. Sarah Mitchell</h4>
-            <span class="team-role">Senior Academic Advisor</span>
-            <div class="team-specialization">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Specializes in STEM applications with focus on Computer Science & Engineering.</span>
-            </div>
-          </div>
-
-          <!-- Member 2 -->
-          <div class="team-card">
-            <div class="team-avatar-box">JC</div>
-            <h4 class="team-name">Dr. James Chen</h4>
-            <span class="team-role">Research Proposal Specialist</span>
-            <div class="team-specialization">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Expert in problem formulation and methodology design for Social Sciences and Humanities.</span>
-            </div>
-          </div>
-
-          <!-- Member 3 -->
-          <div class="team-card">
-            <div class="team-avatar-box">PS</div>
-            <h4 class="team-name">Dr. Priya Sharma</h4>
-            <span class="team-role">Statistical & Analytics Lead</span>
-            <div class="team-specialization">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Multivariate modeling, SPSS, R, Python, and clinical biostatistics analysis.</span>
-            </div>
-          </div>
-
-          <!-- Member 4 -->
-          <div class="team-card">
-            <div class="team-avatar-box">MR</div>
-            <h4 class="team-name">Dr. Michael Roberts</h4>
-            <span class="team-role">Publication & Defense Coach</span>
-            <div class="team-specialization">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>SCI/Scopus reviewer response strategies and doctoral viva presentation defense.</span>
-            </div>
-          </div>
-
-          <!-- Member 5 -->
-          <div class="team-card">
-            <div class="team-avatar-box">ER</div>
-            <h4 class="team-name">Dr. Elena Rodriguez</h4>
-            <span class="team-role">International Applications Lead</span>
-            <div class="team-specialization">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Guides researchers through university selection and international funding proposals.</span>
-            </div>
-          </div>
-
-          <!-- Member 6 -->
-          <div class="team-card">
-            <div class="team-avatar-box">DK</div>
-            <h4 class="team-name">Dr. David Kim</h4>
-            <span class="team-role">Technical Research Advisor</span>
-            <div class="team-specialization">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Deep Learning, computer vision architectures, and algorithmic benchmarking.</span>
-            </div>
-          </div>
-
-          <!-- Member 7 -->
-          <div class="team-card">
-            <div class="team-avatar-box">AP</div>
-            <h4 class="team-name">Dr. Aisha Patel</h4>
-            <span class="team-role">Life Sciences Specialist</span>
-            <div class="team-specialization">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Medical informatics, diagnostic imaging models, and biomedical literature synthesis.</span>
-            </div>
-          </div>
-
-          <!-- Member 8 -->
-          <div class="team-card">
-            <div class="team-avatar-box">TA</div>
-            <h4 class="team-name">Dr. Thomas Anderson</h4>
-            <span class="team-role">Business & Management Advisor</span>
-            <div class="team-specialization">
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Strategic management, empirical survey validation, SEM-AMOS, and marketing analytics.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         AWARDS & RECOGNITION
-         ========================================================================== -->
-    <section class="awards-section">
-      <div class="container">
-        <div class="section-header" style="margin-bottom: 35px;">
-          <h2 class="section-title" style="font-size: 1.95rem;">Awards & Accreditations</h2>
-          <p class="section-subtitle">Recognized for quality standards in academic guidance and higher education mentorship.</p>
-        </div>
-
-        <div class="awards-grid">
-          <div class="award-card">
-            <div class="award-icon"><i class="fa-solid fa-medal"></i></div>
-            <div class="award-title">Excellence in Educational Consulting</div>
-            <div class="award-issuer">International Education Association • 2024</div>
-          </div>
-
-          <div class="award-card">
-            <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
-            <div class="award-title">Top Research Guidance Platform</div>
-            <div class="award-issuer">Global Education Awards • 2023</div>
-          </div>
-
-          <div class="award-card">
-            <div class="award-icon"><i class="fa-solid fa-lightbulb"></i></div>
-            <div class="award-title">Innovation in Academic Mentorship</div>
-            <div class="award-issuer">Higher Education Council • 2022</div>
-          </div>
-
-          <div class="award-card">
-            <div class="award-icon"><i class="fa-solid fa-certificate"></i></div>
-            <div class="award-title">Best Scholar Success Rate</div>
-            <div class="award-issuer">Academic Excellence Foundation • 2021</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         CTA BANNER
-         ========================================================================== -->
-    <section style="background: linear-gradient(135deg, var(--primary-dark), #102644); color: #fff; padding: 75px 0; text-align: center;">
-      <div class="container">
-        <h2 style="font-family: var(--font-heading); font-size: 2.2rem; margin-bottom: 16px;">
-          Ready to Elevate the Quality of Your Research?
-        </h2>
-        <p style="font-size: 1.05rem; color: rgba(255,255,255,0.85); max-width: 650px; margin: 0 auto 30px auto;">
-          Schedule an initial one-on-one consultation with our Subject Matter Experts to discuss your topic, methodology, or analysis challenges.
-        </p>
-        <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-          <a href="contact.html" class="btn btn-primary" style="padding: 14px 30px;">
-            <i class="fa-solid fa-calendar-check"></i> Schedule Free Consultation
-          </a>
-          <a href="https://wa.me/919187559443" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 14px 30px;">
-            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ==========================================================================
-       COMMON FOOTER
-       ========================================================================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-col footer-brand">
-          <a href="index.html" class="brand-logo" style="margin-bottom: 14px;">
-            <div class="brand-icon">P</div>
-            <div class="brand-text">
-              <span class="brand-name">Proofix<span>.</span></span>
-              <span class="brand-subtext">Technologies</span>
-            </div>
-          </a>
-          <p class="footer-tagline">
-            Proofix Technologies Pvt Ltd empowers scholars, researchers, and faculty members through structured, professional, and ethical academic research support.
-          </p>
-          <div class="footer-socials">
-            <a href="https://wa.me/919187559443" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="mailto:proofix.tech@gmail.com" class="social-btn" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
-            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" class="social-btn" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Quick Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
-            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us - Why Proofix</a></li>
-            <li><a href="process.html"><i class="fa-solid fa-angle-right"></i> Our 6-Phase Process</a></li>
-            <li><a href="blogs.html"><i class="fa-solid fa-angle-right"></i> Academic Blogs</a></li>
-            <li><a href="faq.html"><i class="fa-solid fa-angle-right"></i> FAQ</a></li>
-            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Core Services</h4>
-          <ul class="footer-links">
-            <li><a href="services.html#service-proposal"><i class="fa-solid fa-angle-right"></i> Proposal & Synopsis</a></li>
-            <li><a href="services.html#service-literature"><i class="fa-solid fa-angle-right"></i> Literature Review</a></li>
-            <li><a href="services.html#service-methodology"><i class="fa-solid fa-angle-right"></i> Research Methodology</a></li>
-            <li><a href="services.html#service-analysis"><i class="fa-solid fa-angle-right"></i> Statistical Analysis</a></li>
-            <li><a href="services.html#service-thesis"><i class="fa-solid fa-angle-right"></i> Thesis & Dissertation</a></li>
-            <li><a href="services.html#service-publication"><i class="fa-solid fa-angle-right"></i> Journal Publication</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Get in Touch</h4>
-          <div class="footer-contact-info">
-            <div class="contact-info-item">
-              <i class="fa-solid fa-envelope"></i>
-              <div>
-                <strong>Email Us:</strong><br>
-                <a href="mailto:proofix.tech@gmail.com" style="color: rgba(255,255,255,0.85);">proofix.tech@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <i class="fa-solid fa-phone"></i>
-              <div>
-                <strong>Call / WhatsApp:</strong><br>
-                <a href="tel:+919187559443" style="color: rgba(255,255,255,0.85);">+91 91875 59443</a>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <i class="fa-solid fa-clock"></i>
-              <div>
-                <strong>Working Hours:</strong><br>
-                Mon - Sat: 9:30 AM - 6:30 PM IST
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>&copy; 2026 Proofix Technologies Pvt Ltd. All rights reserved.</div>
-        <div class="footer-legal-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Academic Support</a>
-          <a href="#">Ethical Research Guidelines</a>
-        </div>
-      </div>
+      <div><h4>Quick Links</h4><ul>
+        <li><a href="about.html">About Us</a></li><li><a href="research-domains.html">Research Domains</a></li><li><a href="process.html">Our Process</a></li>
+        <li><a href="blogs.html">Blogs</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="service-detail.html?s=proposal">Research Proposal & Synopsis Support</a></li><li><a href="service-detail.html?s=literature">Literature Review Support</a></li><li><a href="service-detail.html?s=methodology">Research Methodology Support</a></li><li><a href="service-detail.html?s=analysis">Data Analysis & Statistical Support</a></li><li><a href="service-detail.html?s=thesis">Thesis & Dissertation Support</a></li><li><a href="service-detail.html?s=manuscript">Research Paper & Manuscript Support</a></li><li><a href="service-detail.html?s=publication">Publication Support</a></li><li><a href="service-detail.html?s=editing">Academic Editing & Proofreading</a></li></ul></div>
+      <div><h4>Get in Touch</h4><ul class="footer-contact">
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto:proofix.tech@gmail.com">proofix.tech@gmail.com</a></li>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+919187559443">+91 91875 59443</a></li>
+        <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/919187559443" target="_blank" rel="noopener">Chat on WhatsApp</a></li></ul></div>
     </div>
-  </footer>
-
-  <!-- WhatsApp Floating Trigger -->
-  <a href="https://wa.me/919187559443?text=Hi%20Proofix%2C%20I%20am%20looking%20for%20academic%20research%20assistance." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
-    <i class="fa-solid fa-chevron-up"></i>
-  </button>
-
-  <!-- jQuery & Application Scripts -->
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/about.js"></script>
+    <div class="footer-bottom"><span>&copy; 2026 Proofix Technologies Pvt Ltd. All rights reserved.</span><span>Empowering Research. Enabling Excellence.</span></div>
+  </div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/919187559443?text=Hi%20Proofix" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
