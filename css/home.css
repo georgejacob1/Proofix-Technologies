@@ -58,10 +58,9 @@
 .step-mini .num { font-size: 2.6rem; font-weight: 800; color: var(--primary-100); line-height: 1; margin-bottom: 8px; }
 .step-mini h3 { font-size: 1.02rem; }
 
-@media (max-width: 960px) {
+@media (max-width: 959px) {
   .hero-grid { grid-template-columns: minmax(0, 1fr); }
-  .hero-visual { max-width: 460px; margin: 0 auto; }
-  .hero-visual { margin-bottom: 48px; }
+  .hero-visual { display: none; }
   .hv-a { left: 8px; top: 6%; padding: 14px 16px; } .hv-b { display: none; } .hv-chips { right: 8px; } .hv-c { right: 8px; bottom: -20px; padding: 14px 16px; }
   .stats-box { grid-template-columns: repeat(2, 1fr); }
   .stat:nth-child(2) { border-right: 0; }
