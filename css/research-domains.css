@@ -2,11 +2,12 @@
    Proofix Technologies — Research Domains page
    ========================================================================== */
 
-.quick-nav { position: sticky; top: var(--header-h); z-index: 50; background: #fff; border-bottom: 1px solid var(--line); }
-.quick-nav .container { display: flex; flex-wrap: nowrap; gap: 8px; overflow-x: auto; padding-top: 12px; padding-bottom: 12px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
-.quick-nav a { flex: 0 0 auto; }
-.quick-nav a { white-space: nowrap; padding: 8px 16px; border-radius: var(--r-full); font-size: .88rem; font-weight: 600; color: var(--ink); background: var(--bg-soft); }
-.quick-nav a:hover, .quick-nav a.active { background: var(--primary); color: #fff; }
+.domain-section { padding-top: 48px; }
 .domain-block { display: grid; grid-template-columns: 340px 1fr; gap: 48px; padding: 48px 0; border-bottom: 1px solid var(--line); }
+.domain-block:first-child, .domain-block:first-of-type { padding-top: 0; }
 .domain-block:last-child { border-bottom: 0; }
-@media (max-width: 960px) { .domain-block { grid-template-columns: 1fr; gap: 20px; } }
+@media (max-width: 960px) {
+  .domain-section { padding-top: 32px; }
+  .domain-block { grid-template-columns: 1fr; gap: 20px; padding: 36px 0; }
+}
+

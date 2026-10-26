@@ -1,6 +1,6 @@
 /**
  * Proofix Technologies - Site script (jQuery)
- * Header, mobile drawer, back-to-top, FAQ accordion, domain quick-nav,
+ * Header, mobile drawer, back-to-top, FAQ accordion,
  * detail-page switching and contact form.
  */
 $(function () {
@@ -46,18 +46,6 @@ $(function () {
     $(this).attr('aria-expanded', open);
     $answer.css('max-height', open ? $answer[0].scrollHeight : 0);
   });
-
-  // Research-domains quick nav: highlight current section
-  var $qLinks = $('.quick-nav a');
-  if ($qLinks.length) {
-    var $blocks = $('.domain-block');
-    $win.on('scroll', function () {
-      var mid = $win.scrollTop() + $win.height() * 0.35;
-      var currentId = '';
-      $blocks.each(function () { if ($(this).offset().top <= mid) currentId = this.id; });
-      $qLinks.each(function () { $(this).toggleClass('active', $(this).attr('href') === '#' + currentId); });
-    });
-  }
 
   // Detail pages (service-detail / blog-detail): show the panel named in the query string
   var $panels = $('.detail-panel');
