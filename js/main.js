@@ -27,7 +27,7 @@ $(function () {
   function setDrawer(open) {
     $nav.toggleClass('open', open);
     $overlay.toggleClass('show', open);
-    $toggle.attr('aria-expanded', open).find('i').attr('class', open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars');
+    $toggle.attr('aria-expanded', open).find('img').attr('src', open ? 'assets/images/icon/xmark.svg' : 'assets/images/icon/bars.svg');
     $('body').css('overflow', open ? 'hidden' : '');
   }
   $toggle.on('click', function () { setDrawer(!$nav.hasClass('open')); });
@@ -89,11 +89,11 @@ $(function () {
         '\nService: ' + $('#inquiryService option:selected').text() + '\nMessage: ' + $.trim($('#inquiryMessage').val())
       );
       var $box = $('#formSuccessBox').empty();
-      $('<i>', { 'class': 'fa-solid fa-circle-check big' }).appendTo($box);
+      $('<img>', { 'class': 'icon big', src: 'assets/images/icon/circle-check.svg', alt: '' }).appendTo($box);
       $('<h3>').text('Thank you, ' + name + '!').appendTo($box);
       $('<p>').text('Your requirement has been noted. To reach our consultant fastest, send it on WhatsApp — we will schedule a consultation with a subject matter expert from your domain.').appendTo($box);
       $('<a>', { 'class': 'btn btn-whatsapp', target: '_blank', rel: 'noopener', href: 'https://wa.me/919187559443?text=' + waText })
-        .html('<i class="fa-brands fa-whatsapp"></i> Continue on WhatsApp').appendTo($box);
+        .html('<img class="icon" src="assets/images/icon/whatsapp.svg" alt=""> Continue on WhatsApp').appendTo($box);
       $form.hide();
       $box.fadeIn(250);
       $('html, body').animate({ scrollTop: $box.offset().top - 160 }, 400);

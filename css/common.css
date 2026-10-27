@@ -265,11 +265,11 @@ ul {
   gap: 8px;
 }
 
-.link-arrow i {
+.link-arrow img {
   transition: transform var(--ease);
 }
 
-.link-arrow:hover i {
+.link-arrow:hover img {
   transform: translateX(4px);
 }
 
@@ -328,7 +328,7 @@ ul {
   background: var(--primary-50);
 }
 
-.nav-link .fa-chevron-down {
+.nav-link img {
   font-size: .65rem;
   transition: transform var(--ease);
 }
@@ -361,8 +361,8 @@ ul {
   transform: none;
 }
 
-.has-menu:hover .fa-chevron-down,
-.has-menu.open .fa-chevron-down {
+.has-menu:hover .nav-link img,
+.has-menu.open .nav-link img {
   transform: rotate(180deg);
 }
 
@@ -452,7 +452,7 @@ ul {
   gap: 12px;
 }
 
-.footer-contact i {
+.footer-contact img {
   color: var(--accent);
   margin-top: 5px;
   width: 16px;
@@ -571,21 +571,14 @@ ul {
 }
 
 .check-list li::before {
-  content: "\f00c";
-  font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
+  content: "";
   position: absolute;
   left: 0;
   top: 12px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: #E3F7EC;
-  color: var(--success);
-  font-size: .68rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #E3F7EC url(../assets/images/icon/check.svg) no-repeat center / 12px;
 }
 
 .check-list.two-col {
@@ -654,7 +647,7 @@ ul {
   align-items: center;
 }
 
-.split img {
+.split > img {
   border-radius: var(--r-lg);
   box-shadow: var(--shadow-lg);
   aspect-ratio: 4/3;
@@ -965,3 +958,40 @@ ul {
     scroll-behavior: auto !important;
   }
 }
+/* Icons: <img class="icon"> from assets/images/icon (Font Awesome Free 6.5.1, CC BY 4.0).
+   SVGs are black, so each context recolors them with a filter. */
+:root {
+  --f-white: brightness(0) invert(1);
+  --f-ink: brightness(0) invert(44%) sepia(70%) saturate(367%) hue-rotate(205deg) brightness(40%) contrast(126%);
+  --f-primary: brightness(0) invert(38%) sepia(75%) saturate(442%) hue-rotate(204deg) brightness(71%) contrast(148%);
+  --f-accent: brightness(0) invert(52%) sepia(88%) saturate(616%) hue-rotate(359deg) brightness(109%) contrast(92%);
+  --f-accent-600: brightness(0) invert(57%) sepia(91%) saturate(554%) hue-rotate(345deg) brightness(80%) contrast(116%);
+  --f-success: brightness(0) invert(57%) sepia(90%) saturate(673%) hue-rotate(95deg) brightness(73%) contrast(86%);
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
+.btn-accent .icon,
+.nav-link .icon,
+.menu-toggle .icon,
+.nav-close .icon { filter: var(--f-ink); }
+
+.nav-link:hover .icon,
+.nav-link.active .icon,
+.btn-outline .icon,
+.link-arrow .icon,
+.icon-box .icon { filter: var(--f-primary); }
+
+.btn-primary .icon,
+.btn-whatsapp .icon,
+.whatsapp-float .icon,
+.back-to-top .icon,
+.icon-box.amber .icon,
+.btn-accent:hover .icon { filter: var(--f-white); }
+
+.footer-contact .icon { filter: var(--f-accent); }

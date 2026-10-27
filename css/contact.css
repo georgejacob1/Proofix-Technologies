@@ -17,7 +17,7 @@
 .form-textarea { min-height: 130px; resize: vertical; }
 .form-error { color: #DC2626; font-size: .86rem; margin: 0 0 14px; display: none; }
 .form-success { display: none; text-align: center; padding: 40px 12px; }
-.form-success i.big { font-size: 3.4rem; color: var(--success); margin-bottom: 14px; }
+.form-success img.big { font-size: 3.4rem; filter: var(--f-success); margin-bottom: 14px; }
 .contact-item { display: flex; gap: 16px; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line); }
 .contact-item:last-child { border-bottom: 0; }
 .contact-item .icon-box { margin: 0; width: 48px; height: 48px; flex-shrink: 0; }

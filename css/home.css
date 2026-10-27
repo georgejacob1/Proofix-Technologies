@@ -5,7 +5,7 @@
 .hero { position: relative; overflow: hidden; background: #f8f6ff;; padding: 56px 0 96px; }
 .hero-grid { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
 .hero-pill { display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px 6px 6px; border: 1px solid var(--line); border-radius: var(--r-full); font-size: .88rem; color: var(--ink-soft); margin-bottom: 22px; }
-.hero-pill i { width: 24px; height: 24px; border-radius: 6px; background: var(--primary); color: #fff; font-size: .7rem; display: flex; align-items: center; justify-content: center; }
+.hero-pill img { width: 24px; height: 24px; padding: 6px; box-sizing: border-box; border-radius: 6px; background: var(--primary); filter: none; }
 .hero-pill b { color: var(--ink); font-weight: 700; }
 .hero h1 { font-size: clamp(2.4rem, 5.4vw, 4.2rem); line-height: 1.08; letter-spacing: -.02em; font-weight: 700; margin-bottom: 22px; }
 .hero h1 em { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 400; color: var(--primary); letter-spacing: -.01em; }
@@ -22,7 +22,7 @@
   background:radial-gradient(120% 90% at 70% 15%, var(--primary-100) 0%, #6b68a2 55%, #1b1650 100%); }
 .hv-chips { position: absolute; top: 28px; right: -28px; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
 .hv-chips span { background: #fff; border-radius: var(--r-full); padding: 8px 16px; font-size: .78rem; font-weight: 600; color: var(--ink); box-shadow: var(--shadow-md); }
-.hv-chips i { color: var(--primary); margin-right: 8px; }
+.hv-chips img { filter: var(--f-primary); margin-right: 8px; }
 .hv-card { position: absolute; border-radius: 20px; box-shadow: var(--shadow-lg); }
 .hv-card.blue { background: var(--primary); color: #fff; padding: 20px 22px; max-width: 190px; }
 .hv-card.blue strong { display: block; font-size: 1.45rem; line-height: 1.15; font-weight: 600; margin-bottom: 6px; }
@@ -40,7 +40,7 @@
 .stat:last-child { border-right: 0; }
 .stat strong { display: block; color: var(--primary); font-size: 1.05rem; font-weight: 800; }
 .stat span { font-size: .88rem; }
-.stat i { color: var(--accent-600); font-size: 1.3rem; margin-bottom: 8px; display: block; }
+.stat img { filter: var(--f-accent-600); font-size: 1.3rem; margin: 0 auto 8px; display: block; }
 .journey { display: flex; gap: 0; overflow-x: auto; padding-bottom: 8px; counter-reset: j; scrollbar-width: thin; }
 .journey a { flex: 1 0 140px; text-align: center; color: var(--ink); font-weight: 700; font-size: .88rem; position: relative; padding: 0 10px; }
 .journey a::before {
