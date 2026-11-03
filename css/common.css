@@ -995,3 +995,27 @@ ul {
 .btn-accent:hover .icon { filter: var(--f-white); }
 
 .footer-contact .icon { filter: var(--f-accent); }
+
+/* Running banner (top of header) */
+.top-banner {
+  background: var(--primary, #0b3d91);
+  color: #fff;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 34px;
+  height: 34px;
+}
+.top-banner-track {
+  display: flex;
+  width: max-content;
+  animation: banner-run 30s linear infinite;
+}
+.top-banner:hover .top-banner-track { animation-play-state: paused; }
+.top-banner-group { display: flex; flex-shrink: 0; }
+.top-banner-group span { padding: 0 28px; white-space: nowrap; }
+.top-banner-group span::before { content: "\2022"; margin-right: 28px; opacity: .6; }
+@keyframes banner-run { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .top-banner-track { animation: none; }
+}
