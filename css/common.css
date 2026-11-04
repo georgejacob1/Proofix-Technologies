@@ -1003,6 +1003,8 @@ ul {
   overflow: hidden;
   font-size: 13px;
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .06em;
   line-height: 34px;
   height: 34px;
 }
@@ -1014,7 +1016,6 @@ ul {
 .top-banner:hover .top-banner-track { animation-play-state: paused; }
 .top-banner-group { display: flex; flex-shrink: 0; }
 .top-banner-group span { padding: 0 28px; white-space: nowrap; }
-.top-banner-group span::before { content: "\2022"; margin-right: 28px; opacity: .6; }
 @keyframes banner-run { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) {
   .top-banner-track { animation: none; }
