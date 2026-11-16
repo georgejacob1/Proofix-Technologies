@@ -51,7 +51,7 @@ $(function () {
   var $panels = $('.detail-panel');
   if ($panels.length) {
     var params = new URLSearchParams(window.location.search);
-    var id = params.get('s') || params.get('b');
+    var id = params.get('s') || params.get('b') || params.get('r');
     var $cur = $panels.filter(function () { return $(this).data('id') === id; }).first();
     if (!$cur.length) $cur = $panels.first();
     $panels.not($cur).prop('hidden', true);

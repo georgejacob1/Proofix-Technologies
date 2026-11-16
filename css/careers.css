@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Proofix Technologies — Careers page
+   ========================================================================== */
+
+.role-grid { align-items: stretch; }
+.role-card, .static-card { display: flex; flex-direction: column; }
+.static-card:hover { transform: none; box-shadow: none; border-color: var(--line); }
+.role-head { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.role-head .icon-box { margin: 0; flex-shrink: 0; }
+.role-head h3 { margin: 0; }
+.role-card h4 { margin: 18px 0 6px; font-size: .95rem; color: var(--ink); }
+.role-card .chips { margin-top: 8px; }
+.role-card .link-arrow { margin-top: auto; padding-top: 22px; align-self: flex-start; color: var(--primary); }
+.role-card p { color: var(--ink-soft); }
+.detail-main .chips { margin-bottom: 8px; }
+.detail-main .apply-details { margin-top: 8px; }
+.note { margin: 16px 0 0; padding: 14px 16px; background: var(--bg-soft); border-left: 3px solid var(--accent); border-radius: var(--r-sm); font-size: .94rem; }
+
+.apply-box { max-width: 880px; margin: 0 auto; padding: 48px; text-align: center; }
+.apply-box .section-head { margin-bottom: 32px; }
+.apply-details { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; text-align: left; }
+.apply-item { display: flex; gap: 16px; align-items: center; padding: 18px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--bg-soft); }
+.apply-item .icon-box { margin: 0; width: 48px; height: 48px; flex-shrink: 0; }
+.apply-item small { display: block; color: var(--ink-mute); }
+.apply-item a, .apply-item strong { color: var(--ink); font-weight: 700; word-break: break-word; }
+.apply-foot { margin: 24px 0 20px; }
+
+@media (max-width: 640px) {
+  .apply-box { padding: 28px 20px; }
+  .apply-details { grid-template-columns: minmax(0, 1fr); }
+}
